@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DynaPuff&family=Fira+Sans:ital,wght@1,500&family=Georama:wght@400;500&family=Libre+Bodoni&family=Oswald:wght@200;300&family=Potta+One&family=Tapestry&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="prism.css">
+    <script src="prism.js"></script>
+
+    <title>Cheat Sheet Template</title>
+</head>
+
+<body>
+    <nav>
+        <span>
+            <div class="content center">
+                All C Programs Here !
+
+            </div>
+        </span> <!-- < ko karo &lt;  and > ko > gt;-->
+    </nav>
+    <div class="container">
+        <ul>
+            <li><b>Programs on If - Else </b><br><br>
+                Q.1. Take positive integer as input and tell if it is even or odd. <br><br>
+                <pre class="language-c"><code>
+#include <stdio.h>
+int main()
+{
+    int a;
+    printf("Enter a positive integer \n");
+    scanf("%d", &a);
+    if (a % 2 == 0)
+    {
+        printf("The number is even");
+    }
+    else
+    {
+        printf("The number is odd");
+    }
+    return 0;
+}
+
+/*
+    Output:
+    Enter a positive integer 
+    23
+    The number is odd
+/*
+                </code></pre><br><br><br>
+            </li>
+            Q.2. Input any year from the user and determine whether the year is a leap year or not (Considering leap year occurs after every 4 years)
+
+ <br><br>
+            <pre class="language-c"><code>
+#include <stdio.h>
+int main()
+    {
+        int y;
+        printf("Enter any year \n");
+        scanf("%d", &y);
+        if (y % 400 == 0 || (y % 4 == 0 && y % 100 != 0))
+        {
+            printf("%d is a leap year", y);
+        }
+        else
+        {
+            printf("%d is not a leap year", y);
+        }
+    
+        return 0;
+    }
+    
+    /*    
+        Output:
+        Enter any year 
+        1948
+        1948 is a leap year
+    /*
+            </code></pre><br><br><br>
+        </li>
+
+   
+    Q.3. Take any integer value as input and print its absolute value
+    ( |7| = 7 and |-7| = 7 )
+
+<br><br>
+    <pre class="language-c"><code>
+#include <stdio.h> 
+int main()
+{
+    int a;
+    printf("Enter any integer \n");
+    scanf("%d", &a);
+    if(a<0){
+        a=a*(-1);
+        printf("The absolute value is %d",a);
+    }
+    else{
+        printf("The absolute value is %d",a);
+    }
+    return 0;
+}
+
+/*
+    Output:
+    Enter any integer 
+    -18
+    The absolute value is 18
+*/
+    </code></pre><br><br><br>
+</li>
+
+
+Q.4. If cost price and selling price are entered by the user then identify whether seller has done profit or loss and also determine the profit he made or loss he incurred
+
+<br><br>
+    <pre class="language-c"><code>
+#include <stdio.h>
+int main()
+    {
+        int sp, cp;
+            printf("Enter the selling price \n");
+        scanf("%d", &sp);
+            printf("Enter the cost price \n");
+        scanf("%d", &cp);
+        if (sp > cp)
+        {
+            printf("The seller has made profit \n");
+            int profit = sp - cp;
+            printf("The profit made is %d", profit);
+        }
+        else if (sp == cp)
+        {
+            printf("No profit no loss");
+        }
+    
+        else
+        {
+            printf("The seller has made profit \n");
+            int loss = cp - sp;
+            printf("The loss incurred is %d", loss);
+        }
+    
+        return 0;
+    }
+
+    /*
+        Output:
+        Enter the selling price 
+        2500
+        Enter the cost price 
+        2000
+        The seller has made a profit 
+        The profit made is 500
+    */
+    </code></pre><br><br><br>
+</li>
+
+
+
+Q.5. Take positive integer from the user and tell if it is a three digit number or not
+
+<br><br>
+    <pre class="language-c"><code>
+#include <stdio.h>
+int main()
+    {
+        int a;
+        printf("Enter the number \n");
+        scanf("%d", &a);
+        if (a > 99 && a < 1000)
+        {
+            printf("It is a three digit number");
+        }
+        else
+        {
+            printf("It is not a three digit number");
+        }
+        return 0;
+    }
+    
+    /*
+        Output:
+        Enter the number 
+        938
+        It is a three digit number
+    */
+    </code></pre><br><br><br>
+</li>
+
+Q.6. Take a positive integer and tell if it is divisible by 5 or 3.
+
+<br><br>
+    <pre class="language-c"><code>
+#include <stdio.h>
+int main()
+    {
+        int a;
+        printf("Enter the number \n");
+        scanf("%d", &a);
+        if (a % 5 == 0 || a % 3 == 0)
+        {
+            printf("%d is divisible by 5 or 3", a);
+        }
+        else
+        {
+            printf("%d is not divisible by 5 or 3", a);
+        }
+        return 0;
+    }
+
+    /*
+        Output:
+        
+        Enter the number 
+        2
+        2 is not divisible by 5 or 3
+    */
+    </code></pre><br><br><br>
+</li>
+
+Q.7. Input 3 positive integers and find the greatest of them (using if else ladder)
+<br><br>
+    <pre class="language-c"><code>
+#include <stdio.h>
+    int main()
+    {
+        int a, b, c;
+        printf("Input 3 numbers \n");
+        scanf("%d%d%d", &a, &b, &c);
+        if (a > b && a > c)
+        {
+        printf("%d is the greatest", a);
+        }
+        else if (b > a && b > c)
+        {
+        printf("%d is the greatest", b);
+        }
+        else
+        {
+        printf("%d is the greatest", c);
+        }
+        return 0;
+    }
+
+    /*
+        Output:
+        Input 3 numbers 
+        3 9 5
+        9 is the greatest
+    */
+    </code></pre><br><br><br>
+</li>
+
+Q.8. Input three numbers and tell if they can be the sides of a triangle.
+
+<br><br>
+    <pre class="language-c"><code>
+#include <stdio.h>
+    int main()
+    {
+        int a, b, c;
+        printf("Input 3 numbers \n");
+        scanf("%d%d%d", &a, &b, &c);
+        if ((a + b) > c && (a + c) > b && (b + c) > a)
+        {
+            printf("Valid triangle");
+        }
+        else
+        {
+            printf("Invalid triangle");
+        }
+        return 0;
+    }
+
+    /*
+        Output:
+        Input 3 numbers 
+        3 4 7
+        Invalid triangle
+    */
+    </code></pre><br><br><br>
+</li>
+
+Q.9. Input a positive integer and tell if it is divisble by 5 or 3 but not divisible by 15.
+
+<br><br>
+    <pre class="language-c"><code>
+#include <stdio.h>
+    int main()
+    {
+        int a;
+        printf("Enter the number \n");
+        scanf("%d", &a);
+        if (a % 3 == 0 || a % 5 == 0)
+        {
+            if (a % 15 != 0)
+            {
+                printf("The number is divisible by 3 or 5 but not by 15");
+            }
+            else
+            {
+            printf("The number is divisble by 3 or 5 and 15");
+            }
+        }
+        else
+        {
+            printf("The number is not divisble by 3 or 5");
+        }
+        return 0;
+    }
+
+    /*
+        Output:   
+        Enter the number 
+        18
+        The number is divisible by 3 or 5 but not by 15
+    */
+    </code></pre><br><br><br>
+</li>
+
+
+Q.10. Input 3 positive integers and find the greatest of them (using if else ladder)
+
+<br><br>
+    <pre class="language-c"><code>
+#include <stdio.h>
+    int main()
+    {
+        int a, b, c;
+        printf("Input 3 numbers \n");
+        scanf("%d%d%d", &a, &b, &c);
+        if (a > b)
+        {
+            if (a > c)
+            {
+        printf("%d is the greatest", a);
+            }
+            else
+            {
+        printf("%d is the greatest", c);
+            }
+        }
+        else
+        {
+            if (b > c)
+            {
+        printf("%d is the greatest", b);
+            }
+            else
+            {
+        printf("%d is the greatest", c);
+            }
+        }
+        return 0;
+    }
+    
+    /*
+        Output:
+        Input 3 numbers 
+        1 3 9
+        9 is the greatest
+    */
+    </code></pre><br><br><br>
+</li>
+
+Q.11. Given three points (x1,y1), (x2,y2) and (x3,y3), write a program to check whether all three points lie on the same line.
+
+<br><br>
+    <pre class="language-c"><code>
+#include <stdio.h>
+int main()
+{
+  float x1, x2, x3, y1, y2, y3;
+    printf("Enter the first point \n");
+    scanf("%f%f", &x1, &y1);
+    printf("Enter the second point \n");
+    scanf("%f%f", &x2, &y2);
+    printf("Enter the third point \n");
+    scanf("%f%f", &x3, &y3);
+ float m1 = (y2 - y1) / (x2 - x1);
+ float m2 = (y3 - y2) / (x3 - x2);
+    if (m1 == m2)
+    {
+     printf("The points lie on the same line");
+    }
+    else
+    {
+     printf("The point does not lie on the same line");
+    }
+    return 0;
+}
+
+
+/*
+    Output:
+    Enter the first point 
+    4 1
+    Enter the second point 
+    3 1
+    Enter the third point 
+    2 1   
+    The points lie on the same line
+*/
+
+    </code></pre><br><br><br>
+</li>
+
+Q.12. Write a program to check whether the number entered is even or odd using ternary operator
+
+<br><br>
+    <pre class="language-c"><code>
+#include <stdio.h>
+int main()
+    {
+        int a;
+        printf("Enter the number \n");
+        scanf("%d",&a);
+        a%2==0 ? printf("Number is even"): printf("Number is odd");
+        return 0;
+    }
+
+/*
+    Output:
+    
+    Enter the number 
+    5
+    Number is odd
+*/
+    </code></pre><br><br><br>
+</li>
+
+Q.13. Use a Boolean Operator in the code and print the output
+
+<br><br>
+    <pre class="language-c"><code>
+#include <stdio.h>
+    int main()
+    {
+        int x=2;
+        int z=x<10;
+        //This is considered as true so z=1
+        printf("%d",z);
+        return 0;
+    }
+
+/*
+    Output: 
+    1
+*/
+    </code></pre><br><br><br>
+</li>
+
+
+
+
+
+
+
+
+<li><b>Programs on Loops </b><br><br>
+    Q.1. Take positive integer as input and tell if it is even or odd. <br><br>
+    <pre class="language-c"><code>
+#include <stdio.h>
+int main()
+{
+int a;
+printf("Enter a positive integer \n");
+scanf("%d", &a);
+if (a % 2 == 0)
+{
+printf("The number is even");
+}
+else
+{
+printf("The number is odd");
+}
+return 0;
+}
+
+/*
+Output:
+Enter a positive integer 
+23
+The number is odd
+/*
+    </code></pre><br><br><br>
+</li>
+
+        </ul>
+    </div>
+</body>
+
+</html>
