@@ -61,21 +61,21 @@ int main()
             <pre class="language-c"><code>
 #include <stdio.h>
 int main()
+{
+    int y;
+    printf("Enter any year \n");
+    scanf("%d", &y);
+    if (y % 400 == 0 || (y % 4 == 0 && y % 100 != 0))
     {
-        int y;
-        printf("Enter any year \n");
-        scanf("%d", &y);
-        if (y % 400 == 0 || (y % 4 == 0 && y % 100 != 0))
-        {
-            printf("%d is a leap year", y);
-        }
-        else
-        {
-            printf("%d is not a leap year", y);
-        }
-    
-        return 0;
+        printf("%d is a leap year", y);
     }
+    else
+    {
+        printf("%d is not a leap year", y);
+    }
+
+    return 0;
+}
     
     /*    
         Output:
@@ -92,18 +92,20 @@ int main()
 
 <br><br>
     <pre class="language-c"><code>
-#include <stdio.h> 
+#include <stdio.h>
 int main()
 {
     int a;
     printf("Enter any integer \n");
     scanf("%d", &a);
-    if(a<0){
-        a=a*(-1);
-        printf("The absolute value is %d",a);
+    if (a < 0)
+    {
+        a = a * (-1);
+        printf("The absolute value is %d", a);
     }
-    else{
-        printf("The absolute value is %d",a);
+    else
+    {
+        printf("The absolute value is %d", a);
     }
     return 0;
 }
@@ -124,32 +126,32 @@ Q.4. If cost price and selling price are entered by the user then identify wheth
     <pre class="language-c"><code>
 #include <stdio.h>
 int main()
+{
+    int sp, cp;
+    printf("Enter the selling price \n");
+    scanf("%d", &sp);
+    printf("Enter the cost price \n");
+    scanf("%d", &cp);
+    if (sp > cp)
     {
-        int sp, cp;
-            printf("Enter the selling price \n");
-        scanf("%d", &sp);
-            printf("Enter the cost price \n");
-        scanf("%d", &cp);
-        if (sp > cp)
-        {
-            printf("The seller has made profit \n");
-            int profit = sp - cp;
-            printf("The profit made is %d", profit);
-        }
-        else if (sp == cp)
-        {
-            printf("No profit no loss");
-        }
-    
-        else
-        {
-            printf("The seller has made profit \n");
-            int loss = cp - sp;
-            printf("The loss incurred is %d", loss);
-        }
-    
-        return 0;
+        printf("The seller has made profit \n");
+        int profit = sp - cp;
+        printf("The profit made is %d", profit);
     }
+    else if (sp == cp)
+    {
+        printf("No profit no loss");
+    }
+
+    else
+    {
+        printf("The seller has made profit \n");
+        int loss = cp - sp;
+        printf("The loss incurred is %d", loss);
+    }
+
+    return 0;
+}
 
     /*
         Output:
@@ -171,20 +173,20 @@ Q.5. Take positive integer from the user and tell if it is a three digit number 
     <pre class="language-c"><code>
 #include <stdio.h>
 int main()
+{
+    int a;
+    printf("Enter the number \n");
+    scanf("%d", &a);
+    if (a > 99 && a < 1000)
     {
-        int a;
-        printf("Enter the number \n");
-        scanf("%d", &a);
-        if (a > 99 && a < 1000)
-        {
-            printf("It is a three digit number");
-        }
-        else
-        {
-            printf("It is not a three digit number");
-        }
-        return 0;
+        printf("It is a three digit number");
     }
+    else
+    {
+        printf("It is not a three digit number");
+    }
+    return 0;
+}
     
     /*
         Output:
@@ -201,20 +203,20 @@ Q.6. Take a positive integer and tell if it is divisible by 5 or 3.
     <pre class="language-c"><code>
 #include <stdio.h>
 int main()
+{
+    int a;
+    printf("Enter the number \n");
+    scanf("%d", &a);
+    if (a % 5 == 0 || a % 3 == 0)
     {
-        int a;
-        printf("Enter the number \n");
-        scanf("%d", &a);
-        if (a % 5 == 0 || a % 3 == 0)
-        {
-            printf("%d is divisible by 5 or 3", a);
-        }
-        else
-        {
-            printf("%d is not divisible by 5 or 3", a);
-        }
-        return 0;
+        printf("%d is divisible by 5 or 3", a);
     }
+    else
+    {
+        printf("%d is not divisible by 5 or 3", a);
+    }
+    return 0;
+}
 
     /*
         Output:
@@ -230,25 +232,25 @@ Q.7. Input 3 positive integers and find the greatest of them (using if else ladd
 <br><br>
     <pre class="language-c"><code>
 #include <stdio.h>
-    int main()
+int main()
+{
+    int a, b, c;
+    printf("Input 3 numbers \n");
+    scanf("%d%d%d", &a, &b, &c);
+    if (a > b && a > c)
     {
-        int a, b, c;
-        printf("Input 3 numbers \n");
-        scanf("%d%d%d", &a, &b, &c);
-        if (a > b && a > c)
-        {
         printf("%d is the greatest", a);
-        }
-        else if (b > a && b > c)
-        {
-        printf("%d is the greatest", b);
-        }
-        else
-        {
-        printf("%d is the greatest", c);
-        }
-        return 0;
     }
+    else if (b > a && b > c)
+    {
+        printf("%d is the greatest", b);
+    }
+    else
+    {
+        printf("%d is the greatest", c);
+    }
+    return 0;
+}
 
     /*
         Output:
@@ -264,21 +266,21 @@ Q.8. Input three numbers and tell if they can be the sides of a triangle.
 <br><br>
     <pre class="language-c"><code>
 #include <stdio.h>
-    int main()
+int main()
+{
+    int a, b, c;
+    printf("Input 3 numbers \n");
+    scanf("%d%d%d", &a, &b, &c);
+    if ((a + b) > c && (a + c) > b && (b + c) > a)
     {
-        int a, b, c;
-        printf("Input 3 numbers \n");
-        scanf("%d%d%d", &a, &b, &c);
-        if ((a + b) > c && (a + c) > b && (b + c) > a)
-        {
-            printf("Valid triangle");
-        }
-        else
-        {
-            printf("Invalid triangle");
-        }
-        return 0;
+        printf("Valid triangle");
     }
+    else
+    {
+        printf("Invalid triangle");
+    }
+    return 0;
+}
 
     /*
         Output:
@@ -294,28 +296,28 @@ Q.9. Input a positive integer and tell if it is divisble by 5 or 3 but not divis
 <br><br>
     <pre class="language-c"><code>
 #include <stdio.h>
-    int main()
+int main()
+{
+    int a;
+    printf("Enter the number \n");
+    scanf("%d", &a);
+    if (a % 3 == 0 || a % 5 == 0)
     {
-        int a;
-        printf("Enter the number \n");
-        scanf("%d", &a);
-        if (a % 3 == 0 || a % 5 == 0)
+        if (a % 15 != 0)
         {
-            if (a % 15 != 0)
-            {
-                printf("The number is divisible by 3 or 5 but not by 15");
-            }
-            else
-            {
-            printf("The number is divisble by 3 or 5 and 15");
-            }
+            printf("The number is divisible by 3 or 5 but not by 15");
         }
         else
         {
-            printf("The number is not divisble by 3 or 5");
+            printf("The number is divisble by 3 or 5 and 15");
         }
-        return 0;
     }
+    else
+    {
+        printf("The number is not divisble by 3 or 5");
+    }
+    return 0;
+}
 
     /*
         Output:   
@@ -332,35 +334,35 @@ Q.10. Input 3 positive integers and find the greatest of them (using if else lad
 <br><br>
     <pre class="language-c"><code>
 #include <stdio.h>
-    int main()
+int main()
+{
+    int a, b, c;
+    printf("Input 3 numbers \n");
+    scanf("%d%d%d", &a, &b, &c);
+    if (a > b)
     {
-        int a, b, c;
-        printf("Input 3 numbers \n");
-        scanf("%d%d%d", &a, &b, &c);
-        if (a > b)
+        if (a > c)
         {
-            if (a > c)
-            {
-        printf("%d is the greatest", a);
-            }
-            else
-            {
-        printf("%d is the greatest", c);
-            }
+            printf("%d is the greatest", a);
         }
         else
         {
-            if (b > c)
-            {
-        printf("%d is the greatest", b);
-            }
-            else
-            {
-        printf("%d is the greatest", c);
-            }
+            printf("%d is the greatest", c);
         }
-        return 0;
     }
+    else
+    {
+        if (b > c)
+        {
+            printf("%d is the greatest", b);
+        }
+        else
+        {
+            printf("%d is the greatest", c);
+        }
+    }
+    return 0;
+}
     
     /*
         Output:
@@ -378,22 +380,22 @@ Q.11. Given three points (x1,y1), (x2,y2) and (x3,y3), write a program to check 
 #include <stdio.h>
 int main()
 {
-  float x1, x2, x3, y1, y2, y3;
+    float x1, x2, x3, y1, y2, y3;
     printf("Enter the first point \n");
     scanf("%f%f", &x1, &y1);
     printf("Enter the second point \n");
     scanf("%f%f", &x2, &y2);
     printf("Enter the third point \n");
     scanf("%f%f", &x3, &y3);
- float m1 = (y2 - y1) / (x2 - x1);
- float m2 = (y3 - y2) / (x3 - x2);
+    float m1 = (y2 - y1) / (x2 - x1);
+    float m2 = (y3 - y2) / (x3 - x2);
     if (m1 == m2)
     {
-     printf("The points lie on the same line");
+        printf("The points lie on the same line");
     }
     else
     {
-     printf("The point does not lie on the same line");
+        printf("The point does not lie on the same line");
     }
     return 0;
 }
@@ -419,13 +421,13 @@ Q.12. Write a program to check whether the number entered is even or odd using t
     <pre class="language-c"><code>
 #include <stdio.h>
 int main()
-    {
-        int a;
-        printf("Enter the number \n");
-        scanf("%d",&a);
-        a%2==0 ? printf("Number is even"): printf("Number is odd");
-        return 0;
-    }
+{
+    int a;
+    printf("Enter the number \n");
+    scanf("%d", &a);
+    a % 2 == 0 ? printf("Number is even") : printf("Number is odd");
+    return 0;
+}
 
 /*
     Output:
@@ -442,14 +444,14 @@ Q.13. Use a Boolean Operator in the code and print the output
 <br><br>
     <pre class="language-c"><code>
 #include <stdio.h>
-    int main()
-    {
-        int x=2;
-        int z=x<10;
-        //This is considered as true so z=1
-        printf("%d",z);
-        return 0;
-    }
+int main()
+{
+    int x = 2;
+    int z = x < 10;
+    // This is considered as true so z=1
+    printf("%d", z);
+    return 0;
+}
 
 /*
     Output: 
