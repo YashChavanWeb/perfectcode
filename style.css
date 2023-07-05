@@ -41,3 +41,12 @@ nav {
 .container li b{
     font-size: x-large;
 }
+
+@media screen and (max-width: 600px ){
+    .container{
+        width: 380px;
+    }
+    nav{
+        content: center;
+    }
+}
