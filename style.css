@@ -42,7 +42,7 @@ nav {
     font-size: x-large;
 }
 
-@media screen and (max-width: 600px ){
+@media screen and (max-width: 800px ){
     .container{
         width: 380px;
     }
