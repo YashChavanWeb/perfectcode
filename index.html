@@ -1043,7 +1043,6 @@ int main()
     2
     Enter the number 
 1
-
 */
 </code></pre><br><br><br>
 </li>
@@ -1058,21 +1057,1332 @@ int main()
 
 
 <li><b>Programs on Pattern Printing (Nested Loops) </b><br><br>
-    Q.1. Print numbers from 1 to 100. <br><br>
+    Q.1.Star Triangle  <br><br>
     <pre class="language-c"><code>
 #include <stdio.h>
 int main()
 {
-    for (int i = 1; i <= 100; i++)
+int n;
+printf("Enter the number of rows \n");
+scanf("%d", &n);
+for (int i = 0; i < n; i++)  //for no of rows
+{
+    for (int j = 0; j < n; j++)  //for no of columns
     {
-        printf("%d ", i);
+        printf("* ");
+    }
+    printf("\n");
+}
+return 0;
+}
+
+/*
+Output:
+    
+    Enter the number of rows 
+    5
+    * * * * * 
+    * * * * * 
+    * * * * * 
+    * * * * * 
+    * * * * *
+
+*/
+    </code></pre><br><br><br>
+</li>
+
+Q.2. Number Square <br><br>
+    <pre class="language-c"><code>
+#include <stdio.h>
+int main()
+{
+int n;
+printf("Enter the number of rows \n");
+scanf("%d", &n);
+for (int i = 1; i <= n; i++) // for no of rows
+{
+    for (int j = 1; j <= n; j++) // for no of columns
+    {
+        printf("%d ", j);
+    }
+    printf("\n");
+}
+return 0;
+}
+
+/*
+Output:
+
+    Enter the number of rows 
+    5
+    1 2 3 4 5 
+    1 2 3 4 5 
+    1 2 3 4 5 
+    1 2 3 4 5 
+    1 2 3 4 5 
+
+*/
+    </code></pre><br><br><br>
+</li>
+
+Q.3.Star Triangle<br><br>
+    <pre class="language-c"><code>
+#include <stdio.h>
+int main()
+{
+int n;
+printf("Enter the number of rows \n");
+scanf("%d", &n);
+for (int i = 1; i <= n; i++)
+{
+    for (int j = 1; j <= i; j++)
+    {
+        printf("* ");
+    }
+    printf("\n");
+}
+return 0;
+}
+
+/*
+Output:
+
+    Enter the number of rows 
+    5    
+    * 
+    * * 
+    * * * 
+    * * * * 
+    * * * * *
+
+*/
+    </code></pre><br><br><br>
+</li>
+
+Q.4. Inverted Star Triangle <br><br>
+    <pre class="language-c"><code>
+#include <stdio.h>
+int main()
+{
+int n;
+printf("Enter the number of rows \n");
+scanf("%d", &n);
+int a = n;
+for (int i = 1; i <= n; i++)
+{
+    for (int j = 1; j <= a; j++)
+    {
+        printf("* ");
+    }
+    printf("\n");
+    a--;
+}
+return 0;
+}
+
+/*
+Output:
+
+    Enter the number of rows 
+    5
+    * * * * * 
+    * * * * 
+    * * * 
+    * * 
+    * 
+
+*/
+    </code></pre><br><br><br>
+</li>
+
+Q.5. Number Triangle <br><br>
+    <pre class="language-c"><code>
+#include <stdio.h>
+int main()
+{
+int n;
+printf("Enter the number of rows \n");
+scanf("%d", &n);
+for (int i = 1; i <= n; i++)
+{
+    for (int j = 1; j <= i; j++)
+    {
+        printf("%d ",j);
+    }
+    printf("\n");
+}
+return 0;
+}
+
+/*
+Output:
+    Enter the number of rows 
+    5
+    1 
+    1 2 
+    1 2 3 
+    1 2 3 4 
+    1 2 3 4 5
+
+*/
+    </code></pre><br><br><br>
+</li>
+
+Q.6. Inverted Number Triangle <br><br>
+    <pre class="language-c"><code>
+#include <stdio.h>
+int main()
+{
+int n;
+printf("Enter the number of rows \n");
+scanf("%d", &n);
+int a = n;
+for (int i = 1; i <= n; i++)
+{
+    for (int j = 1; j <= a; j++)
+    {
+        printf("%d ", j);
+    }
+    printf("\n");
+    a--;
+}
+return 0;
+}
+
+/*
+  Output:
+    Enter the number of rows 
+    5
+    1 2 3 4 5 
+    1 2 3 4 
+    1 2 3 
+    1 2 
+    1 
+
+*/
+    </code></pre><br><br><br>
+</li>
+
+Q.7.Odd Number Triangle<br><br>
+    <pre class="language-c"><code>
+#include <stdio.h>
+int main()
+{
+int n;
+printf("Enter the number of rows \n");
+scanf("%d", &n);
+for (int i = 1; i <= n; i++)
+{
+    int a = 1;
+    for (int j = 1; j <= i; j++)
+    {
+        printf("%d ", a);
+        a = a + 2;
+    }
+    printf("\n");
+}
+return 0;
+}
+
+/*
+Output:
+    Enter the number of rows 
+    5
+    1 
+    1 3 
+    1 3 5 
+    1 3 5 7 
+    1 3 5 7 9 
+
+*/
+    </code></pre><br><br><br>
+</li>
+
+Q.8. Alphabet Square<br><br>
+    <pre class="language-c"><code>
+#include <stdio.h>
+int main()
+{
+int n;
+printf("Enter the number of rows \n");
+scanf("%d", &n);
+for (int i = 0; i < n; i++)
+{
+    int a = 65;
+    for (int j = 0; j < n; j++)
+    {
+        printf("%c ", a);
+        a++;
+    }
+    printf("\n");
+}
+return 0;
+}
+
+/*
+Output
+    Enter the number of rows 
+    5
+    A B C D E 
+    A B C D E 
+    A B C D E 
+    A B C D E 
+    A B C D E 
+
+*/
+    </code></pre><br><br><br>
+</li>
+
+Q.9. Alphabet Triangle <br><br>
+    <pre class="language-c"><code>
+#include <stdio.h>
+int main()
+{
+int n;
+printf("Enter the number of rows \n");
+scanf("%d", &n);
+for (int i = 1; i <= n; i++)
+{
+    int a = 65;
+    for (int j = 1; j <= i; j++)
+    {
+        printf("%c ", a);
+        a++;
+    }
+    printf("\n");
+}
+return 0;
+}
+
+/*
+Output:
+    Enter the number of rows 
+    5
+    A 
+    A B 
+    A B C 
+    A B C D 
+    A B C D E  
+
+*/
+    </code></pre><br><br><br>
+</li>
+
+Q.10. Alphabet and Number Triangle<br><br>
+    <pre class="language-c"><code>
+#include <stdio.h>
+int main()
+{
+int n;
+printf("Enter the number of rows \n");
+scanf("%d", &n);
+int a; // for characters
+int b; // for numbers
+for (int i = 1; i <= n; i++)
+{
+    a = 65;
+    b = 1;
+    for (int j = 1; j <= i; j++)
+    {
+        if (i % 2 == 0)
+        {
+            printf("%c ", a);
+        }
+        else
+        {
+            printf("%d ", b);
+        }
+        a++;
+        b++;
+    }
+    printf("\n");
+}
+return 0;
+}
+
+/*
+Output:
+    Enter the number of rows 
+    5
+    1 
+    A B 
+    1 2 3 
+    A B C D 
+    1 2 3 4 5 
+
+*/
+    </code></pre><br><br><br>
+</li>
+
+Q.11.  Star Plus (n should be always odd)<br><br>
+    <pre class="language-c"><code>
+#include <stdio.h>
+int main()
+{
+int n;
+printf("Enter the number of rows \n");
+scanf("%d", &n);
+for (int i = 1; i <= n; i++)
+{
+    for (int j = 1; j <= n; j++)
+    {
+        if (j == (n / 2) + 1 || i == (n / 2) + 1)
+        {
+            printf("*");
+        }
+        else
+        {
+            printf(" ");
+        }
+    }
+    printf("\n");
+}
+return 0;
+}
+
+/*
+Output:
+    Enter the number of rows 
+    5
+      *  
+      *  
+    *****
+      *  
+      *  
+
+*/  
+    </code></pre><br><br><br>
+</li>
+
+Q.12. Hollow Rectangle <br><br>
+    <pre class="language-c"><code>
+#include <stdio.h>
+int main()
+{
+int n,c;
+printf("Enter the number of rows \n");
+scanf("%d", &n);
+printf("Enter the number of columns \n");
+scanf("%d", &c);
+for (int i = 1; i <= n; i++)
+{
+    for (int j = 1; j <= c; j++)
+    {
+        if (i==1 || i==n || j==1 || j==c)
+        {
+            printf("*");
+        }
+        else
+        {
+            printf(" ");
+        }
+    }
+    printf("\n");
+}
+return 0;
+}
+
+/*
+Output:
+    
+    Enter the number of rows 
+    5
+    Enter the number of columns 
+    7
+    *******
+    *     *
+    *     *
+    *     *
+    *******
+
+*/
+    </code></pre><br><br><br>
+</li>
+
+Q.13. Star Cross (n should be always odd) <br><br>
+    <pre class="language-c"><code>
+#include <stdio.h>
+int main()
+{
+int n;
+printf("Enter the number of rows \n");
+scanf("%d", &n);
+for (int i = 1; i <= n; i++)
+{
+    for (int j = 1; j <= n; j++)
+    {
+        if (i == j || i + j == n + 1)
+        {
+            printf("*");
+        }
+        else
+        {
+            printf(" ");
+        }
+    }
+    printf("\n");
+}
+return 0;
+}
+
+/*
+Output:
+    Enter the number of rows 
+    5
+    *   *
+     * * 
+      *  
+     * * 
+    *   *
+
+*/
+    </code></pre><br><br><br>
+</li>
+
+Q.14. Floyd's Triangle <br><br>
+    <pre class="language-c"><code>
+#include <stdio.h>
+int main()
+{
+int n;
+printf("Enter the number of rows \n");
+scanf("%d", &n);
+int a = 1;
+for (int i = 1; i <= n; i++)
+{
+    for (int j = 1; j <= i; j++)
+    {
+        printf("%d ", a);
+        a++;
+    }
+    printf("\n");
+}
+return 0;
+}
+
+/*
+Output:
+    Enter the number of rows 
+    5
+    1 
+    2 3 
+    4 5 6 
+    7 8 9 10 
+    11 12 13 14 15 
+
+*/
+    </code></pre><br><br><br>
+</li>
+
+
+Q.15. Odd Floyd's Triangle<br><br>
+    <pre class="language-c"><code>
+#include <stdio.h>
+int main()
+{
+int n;
+printf("Enter the number of rows \n");
+scanf("%d", &n);
+int a = 1;
+for (int i = 1; i <= n; i++)
+{
+    for (int j = 1; j <= i; j++)
+    {
+        printf("%d ", a);
+        a=a+2;
+    }
+    printf("\n");
+}
+return 0;
+}
+
+/*
+Output:
+    Enter the number of rows 
+    5
+    1 
+    3 5 
+    7 9 11 
+    13 15 17 19 
+    21 23 25 27 29 
+
+*/
+    </code></pre><br><br><br>
+</li>
+
+Q.16. 0 and 1 Triangle <br><br>
+    <pre class="language-c"><code>
+#include <stdio.h>
+int main()
+{
+int n;
+printf("Enter the number of rows \n");
+scanf("%d", &n);
+for (int i = 1; i <= n; i++)
+{
+    for (int j = 1; j <= i; j++)
+    {
+        if ((i + j) % 2 == 0)
+        {
+            printf("1 ");
+        }
+        else
+        {
+            printf("0 ");
+        }
+    }
+    printf("\n");
+}
+return 0;
+}
+
+/*
+Output:
+    Enter the number of rows 
+    5
+    1 
+    0 1 
+    1 0 1 
+    0 1 0 1 
+    1 0 1 0 1  
+
+*/
+    </code></pre><br><br><br>
+</li>
+
+Q.17. Right Star Triangle <br><br>
+    <pre class="language-c"><code>
+#include <stdio.h>
+int main()
+{
+int n;
+printf("Enter the number of rows \n");
+scanf("%d", &n);
+for(int i=1;i<=n;i++){
+    for(int j=1;j<=n-i;j++){   //for spaces
+        printf(" ");
+    }
+    for(int k=1;k<=i;k++){
+        printf("*");
+    }
+    printf("\n");
+}
+return 0;
+}
+
+/*
+Output:
+    Enter the number of rows 
+    5
+        *
+       **
+      ***
+     ****
+    *****
+
+*/
+    </code></pre><br><br><br>
+</li>
+
+Q.18.  Star Rhombus<br><br>
+    <pre class="language-c"><code>
+#include <stdio.h>
+int main()
+{
+int n;
+printf("Enter the number of rows \n");
+scanf("%d", &n);
+for(int i=1;i<=n;i++){
+    for(int j=1;j<=n-i;j++){   //for spaces
+        printf(" ");
+    }
+    for(int k=1;k<=n;k++){
+        printf("*");
+    }
+    printf("\n");
+}
+return 0;
+}
+
+/*
+Output:
+    Enter the number of rows 
+    5
+        *****
+       *****
+      *****
+     *****
+    *****
+
+*/
+    </code></pre><br><br><br>
+</li>
+
+Q.19. Right Alphabet Triangle <br><br>
+    <pre class="language-c"><code>
+#include <stdio.h>
+int main()
+{
+int n;
+printf("Enter the number of rows \n");
+scanf("%d", &n);
+for(int i=1;i<=n;i++){
+    for(int j=1;j<=n-i;j++){   //for spaces
+        printf(" ");
+    }
+    int a=65;
+    for(int k=1;k<=i;k++){
+        printf("%c",a);
+        a++;
+    }
+    printf("\n");
+}
+return 0;
+}
+
+/*
+Output:
+    Enter the number of rows 
+    5
+        A
+       AB
+      ABC
+     ABCD
+    ABCDE
+
+*/
+    </code></pre><br><br><br>
+</li>
+
+Q.20. Star Pyramid <br><br>
+    <pre class="language-c"><code>
+#include <stdio.h>
+int main()
+{
+int n;
+printf("Enter the number of rows \n");
+scanf("%d", &n);
+for (int i = 1; i <= n; i++)
+{
+    for (int j = 1; j <= n - i; j++)
+    { // for spaces
+        printf(" ");
+    }
+    for (int k = 1; k <= (2 * i - 1); k++)
+    {
+        // or k<=nst and nst+2 after completing k loop
+        printf("*");
+    }
+    printf("\n");
+}
+return 0;
+}
+
+/*
+Output:
+    Enter the number of rows 
+    5
+        *
+       ***
+      *****
+     *******
+    *********
+
+*/
+    </code></pre><br><br><br>
+</li>
+
+Q.21. Number Pyramid <br><br>
+    <pre class="language-c"><code>
+#include <stdio.h>
+int main()
+{
+    int n;
+    printf("Enter the number of rows \n");
+    scanf("%d", &n);
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= n - i; j++)
+        { // for spaces
+            printf(" ");
+        }
+        for (int k = 1; k <= (2 * i - 1); k++)
+        {
+            // or k<=nst and nst+2 after completing k loop
+            printf("%d",k);
+        }
+        printf("\n");
     }
     return 0;
 }
 
+/*
+Output:
+    Enter the number of rows 
+    5
+        1
+       123
+      12345
+     1234567
+    123456789
+
+*/
     </code></pre><br><br><br>
 </li>
 
+Q.22.  Alphabet Pyramid<br><br>
+    <pre class="language-c"><code>
+#include <stdio.h>
+int main()
+{
+int n;
+printf("Enter the number of rows \n");
+scanf("%d", &n);
+for (int i = 1; i <= n; i++)
+{
+    for (int j = 1; j <= n - i; j++)
+    { // for spaces
+        printf(" ");
+    }
+    int a=65;
+    for (int k = 1; k <= (2 * i - 1); k++)
+    {
+        // or k<=nst and nst+2 after completing k loop
+        printf("%c",a);
+    a++;
+    }
+    printf("\n");
+}
+return 0;
+}
+
+/*
+Output:
+    Enter the number of rows 
+    5
+        A
+       ABC
+      ABCDE
+     ABCDEFG
+    ABCDEFGHI
+
+*/
+    </code></pre><br><br><br>
+</li>
+
+Q.23. Unique Number Triangle <br><br>
+    <pre class="language-c"><code>
+#include <stdio.h>
+int main()
+{
+int n;
+printf("Enter the number of rows \n");
+scanf("%d", &n);
+for (int i = 1; i <= n; i++)
+{
+    for (int j = 1; j <= n - i; j++) //for spaces
+    {
+        printf(" ");
+    }
+    for (int k = 1; k <= i; k++)  //normal triangle 
+    {
+        printf("%d", k);
+    }
+    int a = i - 1;
+    for (int l = 1; l <= i - 1; l++)  
+    {
+        printf("%d", a);
+        a--;
+    }
+    printf("\n");
+}
+return 0;
+}
+
+/*
+Output:
+    Enter the number of rows 
+    5
+        1
+       121
+      12321
+     1234321
+    123454321
+
+*/
+    </code></pre><br><br><br>
+</li>
+
+Q.24. Unique Alphabet Pyramid <br><br>
+    <pre class="language-c"><code>
+#include <stdio.h>
+int main()
+{
+int n;
+printf("Enter the number of rows \n");
+scanf("%d", &n);
+for (int i = 1; i <= n; i++)
+{
+    for (int j = 1; j <= n - i; j++)
+    {
+        printf(" ");
+    }
+    int a = 65;
+    for (int k = 1; k <= i; k++)
+    {
+        printf("%c", a);
+        a++;
+    }
+    int b = 63 + i;
+    for (int l = 1; l <= i - 1; l++)
+    {
+        printf("%c", b);
+        b--;
+    }
+    printf("\n");
+}
+return 0;
+}
+
+/*
+Output:
+    Enter the number of rows 
+    5
+        A
+       ABA
+      ABCBA
+     ABCDCBA
+    ABCDEDCBA
+
+
+*/
+    </code></pre><br><br><br>
+</li>
+
+Q.25. Star Diamond (n should be always odd) <br><br>
+    <pre class="language-c"><code>
+#include <stdio.h>
+int main()
+{
+int n;
+printf("Enter the number of rows \n");
+scanf("%d", &n);
+int nsp = n / 2;
+int nst = 1;
+int ml = n / 2 + 1;
+for (int i = 1; i <= n; i++)
+{
+    for (int j = 1; j <= nsp; j++)
+    {
+        printf(" ");
+    }
+    for (int k = 1; k <= nst; k++)
+    {
+        printf("*");
+    }
+    if (i < ml)
+    {
+        nsp--;
+        nst = nst + 2;
+    }
+    else
+    {
+        nsp++;
+        nst = nst - 2;
+    }
+    printf("\n");
+}
+return 0;
+}
+
+/*
+Output:
+    Enter the number of rows 
+    5
+      *
+     ***
+    *****
+     ***
+      *
+
+*/
+    </code></pre><br><br><br>
+</li>
+
+Q.26. Right Inverse Star Triangle <br><br>
+    <pre class="language-c"><code>
+#include <stdio.h>
+int main()
+{
+int n;
+printf("Enter the number of rows \n");
+scanf("%d", &n);
+int a = n;
+for (int i = 1; i <= n; i++)
+{
+    for (int j = 1; j <= i - 1; j++)
+    {
+        printf(" ");
+    }
+    for (int k = 1; k <= a; k++)
+    {
+        printf("*");
+    }
+    a--;
+    printf("\n");
+}
+return 0;
+}
+
+/*
+Output:
+    Enter the number of rows 
+    5
+    *****
+     ****
+      ***
+       **
+        *
+
+*/
+    </code></pre><br><br><br>
+</li>
+
+Q.27.  Double Star Triangle <br><br>
+    <pre class="language-c"><code>
+#include <stdio.h>
+int main()
+{
+int n;
+printf("Enter the number of rows \n");
+scanf("%d", &n);
+int nst = n;
+int nsp = 1;
+for (int i = 1; i <= ((2 * n) + 1); i++)
+{
+    printf("*");
+}
+printf("\n");
+for (int i = 1; i <= n; i++)
+{
+    for (int j = 1; j <= nst; j++)
+    {
+        printf("*");
+    }
+    for (int k = 1; k <= nsp; k++)
+    {
+        printf(" ");
+    }
+    for (int j = 1; j <= nst; j++)
+    {
+        printf("*");
+    }
+    nst--;
+    nsp = nsp + 2;
+    printf("\n");
+}
+return 0;
+}
+
+/*
+Output:
+    Enter the number of rows 
+    5
+    ***********
+    ***** *****
+    ****   ****
+    ***     ***
+    **       **
+    *         *
+
+*/
+    </code></pre><br><br><br>
+</li>
+
+Q.28.  Double Number Triangle <br><br>
+    <pre class="language-c"><code>
+#include <stdio.h>
+int main()
+{
+int n;
+printf("Enter the number of rows \n");
+scanf("%d", &n);
+int nst = n;
+int nsp = 1;
+for (int i = 1; i <= ((2 * n) + 1); i++)
+{
+    printf("%d", i);
+}
+printf("\n");
+for (int i = 1; i <= n; i++)
+{
+    int a = 1;
+    for (int j = 1; j <= nst; j++)
+    {
+        printf("%d", a);
+        a++;
+    }
+    for (int k = 1; k <= nsp; k++)
+    {
+        printf(" ");
+        a++;
+    }
+    for (int j = 1; j <= nst; j++)
+    {
+        printf("%d", a);
+        a++;
+    }
+    nst--;
+    nsp = nsp + 2;
+    printf("\n");
+}
+return 0;
+}
+
+/*
+Output:
+    Enter the number of rows 
+    3
+    1234567
+    123 567
+    12   67
+    1     7
+
+*/
+    </code></pre><br><br><br>
+</li>
+
+Q.29. Double Alphabet Triangle <br><br>
+    <pre class="language-c"><code>
+#include <stdio.h>
+int main()
+{
+int n;
+printf("Enter the number of rows \n");
+scanf("%d", &n);
+int nst = n;
+int nsp = 1;
+int m=65;
+for (int i = 1; i <= ((2 * n) + 1); i++)
+{
+    printf("%c", m);
+    m++;
+}
+printf("\n");
+for (int i = 1; i <= n; i++)
+{
+    int a = 65;
+    for (int j = 1; j <= nst; j++)
+    {
+        printf("%c", a);
+        a++;
+    }
+    for (int k = 1; k <= nsp; k++)
+    {
+        printf(" ");
+        a++;
+    }
+    for (int j = 1; j <= nst; j++)
+    {
+        printf("%c", a);
+        a++;
+    }
+    nst--;
+    nsp = nsp + 2;
+    printf("\n");
+}
+return 0;
+}
+
+/*
+Output:
+    Enter the number of rows 
+    3
+    ABCDEFG
+    ABC EFG
+    AB   FG
+    A     G
+
+*/
+    </code></pre><br><br><br>
+</li>
+
+Q.30. Double unique number triangle <br><br>
+    <pre class="language-c"><code>
+#include <stdio.h>
+int main()
+{
+int n;
+printf("Enter the number of rows \n");
+scanf("%d", &n);
+int nst = n;
+int nsp = 1;
+int a = n;
+for (int i = 1; i <= ((2 * n) + 1); i++)
+{
+    if (i > n + 1)
+    {
+        printf("%d", a);
+        a--;
+    }
+    else
+    {
+        printf("%d", i);
+    }
+}
+printf("\n");
+for (int i = 1; i <= n; i++)
+{
+    int b = 1;
+    for (int j = 1; j <= nst; j++)
+    {
+        printf("%d", b);
+        b++;
+    }
+    for (int k = 1; k <= nsp; k++)
+    {
+        printf(" ");
+    }   
+    int c = b - 1;
+    for (int j = 1; j <= nst; j++)
+    {
+        printf("%d", c);
+        c--;
+    }
+    nst--;
+    nsp = nsp + 2;
+    printf("\n");
+}
+return 0;
+}
+
+/*
+Output:
+    Enter the number of rows 
+    5
+    12345654321
+    12345 54321
+    1234   4321
+    123     321
+    12       21
+    1         1
+
+*/
+    </code></pre><br><br><br>
+</li>
+
+Q.31.  Number Zoom <br><br>
+    <pre class="language-c"><code>
+#include <stdio.h>
+int main()
+{
+int n;
+printf("Enter the number of rows \n");
+scanf("%d", &n);
+int min = 0;
+for (int i = 1; i <= 2 * n - 1; i++)
+{
+    for (int j = 1; j <= 2 * n - 1; j++)
+    {
+        int a = i;
+        if (a > n)
+        {
+            a = 2 * n - i;
+        }
+        int b = j;
+        if (b > n)
+        {
+            b = 2 * n - j;
+        }
+        if (a < b)
+        { // To find minimum of two numbers
+            min = a;
+        }
+        else
+        {
+            min = b;
+        }
+        printf("%d ", min);
+    }
+    printf("\n");
+}
+return 0;
+}
+
+/*
+Output:
+    Enter the number of rows 
+    5
+    1 1 1 1 1 1 1 1 1 
+    1 2 2 2 2 2 2 2 1 
+    1 2 3 3 3 3 3 2 1 
+    1 2 3 4 4 4 3 2 1 
+    1 2 3 4 5 4 3 2 1 
+    1 2 3 4 4 4 3 2 1 
+    1 2 3 3 3 3 3 2 1 
+    1 2 2 2 2 2 2 2 1 
+    1 1 1 1 1 1 1 1 1 
+
+*/
+    </code></pre><br><br><br>
+</li>
+
+Q.32. Reverse Number Zoom <br><br>
+    <pre class="language-c"><code>
+#include <stdio.h>
+int main()
+{
+int n;
+printf("Enter the number of rows \n");
+scanf("%d", &n);
+int min = 0;
+for (int i = 1; i <= 2 * n - 1; i++)
+{
+    for (int j = 1; j <= 2 * n - 1; j++)
+    {
+        int a = i;
+        if (a > n)
+        {
+            a = 2 * n - i;
+        }
+        int b = j;
+        if (b > n)
+        {
+            b = 2 * n - j;
+        }
+        if (a < b)
+        { // To find minimum of two numbers
+            min = a;
+        }
+        else
+        {
+            min = b;
+        }
+        printf("%d ", n+1-min);
+    }
+    printf("\n");
+}
+return 0;
+}
+
+/*
+Output:
+    Enter the number of rows 
+    5
+    5 5 5 5 5 5 5 5 5 
+    5 4 4 4 4 4 4 4 5 
+    5 4 3 3 3 3 3 4 5 
+    5 4 3 2 2 2 3 4 5 
+    5 4 3 2 1 2 3 4 5 
+    5 4 3 2 2 2 3 4 5 
+    5 4 3 3 3 3 3 4 5 
+    5 4 4 4 4 4 4 4 5 
+    5 5 5 5 5 5 5 5 5 
+
+
+*/
+    </code></pre><br><br><br>
+</li>
         </ul>
     </div>
 </body>
