@@ -27,10 +27,11 @@
     </nav>
     <div class="container">
         <ul>
+
             <li><b>Programs on If - Else </b><br><br>
                 Q.1. Take positive integer as input and tell if it is even or odd. <br><br>
                 <pre class="language-c"><code>
-#include <stdio.h>
+#include &lt;stdio.h&gt;
 int main()
 {
     int a;
@@ -59,7 +60,7 @@ int main()
 
  <br><br>
             <pre class="language-c"><code>
-#include <stdio.h>
+#include &lt;stdio.h&gt;
 int main()
 {
     int y;
@@ -92,13 +93,13 @@ int main()
 
 <br><br>
     <pre class="language-c"><code>
-#include <stdio.h>
+#include &lt;stdio.h&gt;
 int main()
 {
     int a;
     printf("Enter any integer \n");
     scanf("%d", &a);
-    if (a < 0)
+    if (a &lt; 0)
     {
         a = a * (-1);
         printf("The absolute value is %d", a);
@@ -124,7 +125,7 @@ Q.4. If cost price and selling price are entered by the user then identify wheth
 
 <br><br>
     <pre class="language-c"><code>
-#include <stdio.h>
+#include &lt;stdio.h&gt;
 int main()
 {
     int sp, cp;
@@ -132,7 +133,7 @@ int main()
     scanf("%d", &sp);
     printf("Enter the cost price \n");
     scanf("%d", &cp);
-    if (sp > cp)
+    if (sp &gt; cp)
     {
         printf("The seller has made profit \n");
         int profit = sp - cp;
@@ -171,13 +172,13 @@ Q.5. Take positive integer from the user and tell if it is a three digit number 
 
 <br><br>
     <pre class="language-c"><code>
-#include <stdio.h>
+#include &lt;stdio.h&gt;
 int main()
 {
     int a;
     printf("Enter the number \n");
     scanf("%d", &a);
-    if (a > 99 && a < 1000)
+    if (a &gt; 99 && a &lt; 1000)
     {
         printf("It is a three digit number");
     }
@@ -201,7 +202,7 @@ Q.6. Take a positive integer and tell if it is divisible by 5 or 3.
 
 <br><br>
     <pre class="language-c"><code>
-#include <stdio.h>
+#include &lt;stdio.h&gt;
 int main()
 {
     int a;
@@ -231,17 +232,17 @@ int main()
 Q.7. Input 3 positive integers and find the greatest of them (using if else ladder)
 <br><br>
     <pre class="language-c"><code>
-#include <stdio.h>
+#include &lt;stdio.h&gt;
 int main()
 {
     int a, b, c;
     printf("Input 3 numbers \n");
     scanf("%d%d%d", &a, &b, &c);
-    if (a > b && a > c)
+    if (a &gt; b && a &gt; c)
     {
         printf("%d is the greatest", a);
     }
-    else if (b > a && b > c)
+    else if (b &gt; a && b &gt; c)
     {
         printf("%d is the greatest", b);
     }
@@ -265,13 +266,13 @@ Q.8. Input three numbers and tell if they can be the sides of a triangle.
 
 <br><br>
     <pre class="language-c"><code>
-#include <stdio.h>
+#include &lt;stdio.h&gt;
 int main()
 {
     int a, b, c;
     printf("Input 3 numbers \n");
     scanf("%d%d%d", &a, &b, &c);
-    if ((a + b) > c && (a + c) > b && (b + c) > a)
+    if ((a + b) &gt; c && (a + c) &gt; b && (b + c) &gt; a)
     {
         printf("Valid triangle");
     }
@@ -295,7 +296,7 @@ Q.9. Input a positive integer and tell if it is divisble by 5 or 3 but not divis
 
 <br><br>
     <pre class="language-c"><code>
-#include <stdio.h>
+#include &lt;stdio.h&gt;
 int main()
 {
     int a;
@@ -333,15 +334,15 @@ Q.10. Input 3 positive integers and find the greatest of them (using if else lad
 
 <br><br>
     <pre class="language-c"><code>
-#include <stdio.h>
+#include &lt;stdio.h&gt;
 int main()
 {
     int a, b, c;
     printf("Input 3 numbers \n");
     scanf("%d%d%d", &a, &b, &c);
-    if (a > b)
+    if (a &gt; b)
     {
-        if (a > c)
+        if (a &gt; c)
         {
             printf("%d is the greatest", a);
         }
@@ -352,7 +353,7 @@ int main()
     }
     else
     {
-        if (b > c)
+        if (b &gt; c)
         {
             printf("%d is the greatest", b);
         }
@@ -377,7 +378,7 @@ Q.11. Given three points (x1,y1), (x2,y2) and (x3,y3), write a program to check 
 
 <br><br>
     <pre class="language-c"><code>
-#include <stdio.h>
+#include &lt;stdio.h&gt;
 int main()
 {
     float x1, x2, x3, y1, y2, y3;
@@ -419,7 +420,7 @@ Q.12. Write a program to check whether the number entered is even or odd using t
 
 <br><br>
     <pre class="language-c"><code>
-#include <stdio.h>
+#include &lt;stdio.h&gt;
 int main()
 {
     int a;
@@ -443,11 +444,11 @@ Q.13. Use a Boolean Operator in the code and print the output
 
 <br><br>
     <pre class="language-c"><code>
-#include <stdio.h>
+#include &lt;stdio.h&gt;
 int main()
 {
     int x = 2;
-    int z = x < 10;
+    int z = x &lt; 10;
     // This is considered as true so z=1
     printf("%d", z);
     return 0;
@@ -472,7 +473,7 @@ int main()
 <li><b>Programs on Loops </b><br><br>
     Q.1. Print numbers from 1 to 100. <br><br>
     <pre class="language-c"><code>
-#include <stdio.h>
+#include &lt;stdio.h&gt;
 int main()
 {
     for (int i = 1; i <= 100; i++)
@@ -489,7 +490,7 @@ Q.2. Print all the even and odd numbers from 1 to 100
 
 <br><br>
     <pre class="language-c"><code>
-#include <stdio.h>
+#include &lt;stdio.h&gt;
 int main()
 {
     for (int i = 1; i <= 100; i++)
@@ -516,7 +517,7 @@ Q.3. Print the table of 19.
 
 <br><br>
     <pre class="language-c"><code>
-#include <stdio.h>
+#include &lt;stdio.h&gt;
 int main()
 {
     for (int i = 1; i <= 10; i++)
@@ -546,7 +547,7 @@ Q.4. Display this AP - 1,3,5,7,9,...upto n terms
 
 <br><br>
     <pre class="language-c"><code>
-#include <stdio.h>
+#include &lt;stdio.h&gt;
 int main()
 {
     int n;
@@ -575,7 +576,7 @@ Q.5. Display this AP - 4,7,10,13... upto n terms
 
 <br><br>
     <pre class="language-c"><code>
-#include <stdio.h>
+#include &lt;stdio.h&gt;
 int main()
 {
     int n;
@@ -604,7 +605,7 @@ Q.6. Display this GP - 1,2,4,8,16,32,... upto n terms
 
 <br><br>
     <pre class="language-c"><code>
-#include <stdio.h>
+#include &lt;stdio.h&gt;
 int main()
 {
     int n;
@@ -633,11 +634,11 @@ Q.7. Display this AP - 100,97,94,91,... upto all terms which are positive
 
 <br><br>
     <pre class="language-c"><code>
-#include <stdio.h>
+#include &lt;stdio.h&gt;
 int main()
 {
     int a = 100;
-    for (int i = 1; a > 0; i++)
+    for (int i = 1; a &gt; 0; i++)
     {
         printf("%d ", a);
         a = a - 3;
@@ -651,7 +652,7 @@ Q.8. WAP (Write a Program) to check whether the number entered is prime number o
 
 <br><br>
     <pre class="language-c"><code>
-#include <stdio.h>
+#include &lt;stdio.h&gt;
 int main()
 {
     int n;
@@ -693,14 +694,14 @@ Q.9. WAP to count the digits of a given number.
 
 <br><br>
     <pre class="language-c"><code>
-#include <stdio.h>
+#include &lt;stdio.h&gt;
 int main()
 {
     int n;
     printf("Enter the number \n");
     scanf("%d",&n);
     int count=0;
-    while(n>0){
+    while(n&gt;0){
         n=n/10;
         count++;
     }
@@ -721,14 +722,14 @@ Q.10. WAP to print the sum of the digits of the given number.
 
 <br><br>
     <pre class="language-c"><code>
-#include <stdio.h>
+#include &lt;stdio.h&gt;
 int main()
 {
     int n;
     printf("Enter the number \n");
     scanf("%d", &n);
     int sum = 0;
-    while (n > 0)
+    while (n &gt; 0)
     {
         sum = sum + (n % 10);
         n = n / 10;
@@ -749,14 +750,14 @@ Q.11. WAP to print reverse of a given number.
 
 <br><br>
     <pre class="language-c"><code>
-#include <stdio.h>
+#include &lt;stdio.h&gt;
 int main()
 {
     int n;
     printf("Enter a number \n");
     scanf("%d", &n);
     int sum = 0;
-    while (n > 0)
+    while (n &gt; 0)
     {
         sum = sum * 10 + n % 10;
         n = n / 10;
@@ -778,7 +779,7 @@ Q.12.  Print the sum of this series: 1 - 2 + 3 - 4 + 5 .....upto n.
 
 <br><br>
     <pre class="language-c"><code>
-#include <stdio.h>
+#include &lt;stdio.h&gt;
 int main()
 {
     int n;
@@ -814,7 +815,7 @@ Q.13. Print the factorial of the given number n.
 
 <br><br>
     <pre class="language-c"><code>
-#include <stdio.h>
+#include &lt;stdio.h&gt;
 int main()
 {
     int n;
@@ -842,7 +843,7 @@ Q.14. Print the factorial upto n numbers.
 
 <br><br>
     <pre class="language-c"><code>
-#include <stdio.h>
+#include &lt;stdio.h&gt;
 int main()
 {
     int n;
@@ -873,7 +874,7 @@ Q.15. Print the nth Fibonacci Number.
 
 <br><br>
     <pre class="language-c"><code>
-#include <stdio.h>
+#include &lt;stdio.h&gt;
 int main()
 {
     int n;
@@ -905,7 +906,7 @@ Q.16. Print first n numbers in Fibonacci Series.
 
 <br><br>
     <pre class="language-c"><code>
-#include <stdio.h>
+#include &lt;stdio.h&gt;
 int main()
 {
     int n;
@@ -936,7 +937,7 @@ Q.17. Two numbers are entered, WAP to find the value of one number raised to the
 
 <br><br>
     <pre class="language-c"><code>
-#include <stdio.h>
+#include &lt;stdio.h&gt;
 int main()
 {
     int a, b;
@@ -964,7 +965,7 @@ int main()
 Q.18. Write a program to print all the ASCII values and their equivalent characters of all 26 Alphabets using while loop.
 <br><br>
     <pre class="language-c"><code>
-#include <stdio.h>
+#include &lt;stdio.h&gt;
 int main()
 {
     int i = 65;
@@ -985,7 +986,7 @@ Q.19. Write a program to check whether a number entered is Armstrong or not.
 /*(If the sum of cubes of the digits of the number = to the
  original number then it is called as Armstrong Number)*/
 
-#include <stdio.h>
+#include &lt;stdio.h&gt;
 int main()
 {
     int n;
@@ -993,7 +994,7 @@ int main()
     scanf("%d", &n);
     int c = n;
     int rem = 1, sum = 0;
-    while (n > 0)
+    while (n &gt; 0)
     {
         rem = n % 10;
         sum = sum + (rem * rem * rem);
@@ -1023,7 +1024,7 @@ Q.20. WAP to stop when the user enters an odd Number.
 
 <br><br>
     <pre class="language-c"><code>
-#include <stdio.h>
+#include &lt;stdio.h&gt;
 int main()
 {
     int n;
@@ -2383,6 +2384,3948 @@ Output:
 */
     </code></pre><br><br><br>
 </li>
+
+
+
+
+
+
+
+
+
+
+<li><b>Programs on Functions and Recursion </b><br><br>
+    Q.1. Write a program to find the nCr value provided n and r are entered by the user.  <br><br>
+    <pre class="language-c"><code>
+#include <stdio.h>
+int fact(int a)
+{
+int fact = 1;
+for (int i = 1; i <= a; i++)
+{
+    fact = fact * i;
+}
+return fact;
+}
+int main()
+{
+int n, r;
+printf("Enter the value of n and r \n");
+scanf("%d%d", &n, &r);
+int nCr = fact(n) / (fact(r) * fact(n - r));
+printf("The value of %dC%d = %d", n, r, nCr);
+return 0;
+}
+
+/*
+Output:
+
+    Enter the value of n and r 
+    5 3
+    The value of 5C3 = 10
+
+*/
+    </code></pre><br><br><br>
+</li>
+
+Q.2.  2. Write a function to print numbers of Pascal's Triangle.<br><br>
+<pre class="language-c"><code>
+#include <stdio.h>
+int fact(int a)
+{
+int fact = 1;
+for (int i = 1; i <= a; i++)
+{
+    fact = fact * i;
+}
+return fact;
+}
+
+int main()
+{
+int n, nCr;
+printf("Enter the value of n \n");
+scanf("%d", &n);
+for (int i = 0; i <= n; i++)
+{
+    for (int j = 0; j <= i; j++)
+    {
+        nCr = fact(i) / (fact(j) * fact(i - j));
+        printf("%d ", nCr);
+    }
+    printf("\n");
+}
+
+return 0;
+}
+
+/*
+Output:     
+
+    1 
+    1 1 
+    1 2 1 
+    1 3 3 1 
+    1 4 6 4 1 
+
+*/
+</code></pre><br><br><br>
+</li>
+
+Q.3.  WAP to swap two numbers using Function. <br><br>
+<pre class="language-c"><code>
+#include <stdio.h>
+void swap(int *a, int *b)
+{
+int temp = *a;
+*a = *b;
+*b = temp;
+}
+int main()
+{
+int a, b;
+printf("Enter the values of a and b \n");
+scanf("%d%d", &a, &b);
+printf("Before swapping, a=%d,b=%d \n", a, b);
+swap(&a, &b);
+printf("After swapping, a=%d,b=%d \n", a, b);
+return 0;
+}
+
+/*
+Output:
+
+    Enter the values of a and b 
+    3 5
+    Before swapping, a=3,b=5 
+    After swapping, a=5,b=3 
+
+*/
+</code></pre><br><br><br>
+</li>
+
+Q.4. WAP for the use of Pointer and double pointer.  <br><br>
+<pre class="language-c"><code>
+#include <stdio.h>
+
+int main()
+{
+int a = 10;
+int *b = &a;  // stores address of integer
+int **c = &b; // stores address of pointer
+
+printf("The value at b is %d \n", *b);
+printf("The value at c is %d \n", **c);
+
+printf("The address of a is %p \n", b);
+printf("The address of b is %p \n", c);
+return 0;
+}
+
+/*
+Output:
+
+    The value at b is 10 
+    The value at c is 10 
+    The address of a is 0061FF18 
+    The address of b is 0061FF14
+
+*/
+</code></pre><br><br><br>
+</li>
+
+Q.5. Write a function to find the GCD of two given numbers.  <br><br>
+<pre class="language-c"><code>
+#include <stdio.h>
+int gcd(int a, int b)
+{
+int ans;
+for (int i = 1; (i <= a && i <= b); i++)
+{
+    if (a % i == 0 && b % i == 0)
+    {
+        ans = i;
+    }
+}
+return ans;
+}
+int main()
+{
+int a, b;
+printf("Enter the two numbers \n");
+scanf("%d%d", &a, &b);
+printf("The gcd of %d and %d is %d", a, b, gcd(a, b));
+return 0;
+}
+
+/*
+Output:
+    Enter the two numbers 
+    5 25
+    The gcd of 5 and 25 is 5
+
+*/
+</code></pre><br><br><br>
+</li>
+
+Q.6. A positive integer is entered through the keyboard. Write a function to obtain the prime factors of this number.  <br><br>
+<pre class="language-c"><code>
+#include <stdio.h>
+int main()
+{
+int n, f = 0;
+printf("Enter any number \n");
+scanf("%d", &n);
+for (int i = 2; i <= n; i++)
+{
+    if (n % i == 0)
+    {
+        for (int j = 2; j <= i / 2; j++)
+        {
+            if (i % j == 0)
+            {
+                f = 1;
+                break;
+            }
+        }
+        if (f == 0)
+        {
+            printf("%d   ", i);
+        }
+    }
+}
+return 0;
+}
+
+/*
+Output:
+
+    Enter any number 
+    30
+    2   3   5
+
+*/
+</code></pre><br><br><br>
+</li>
+
+Q.7.  Factorial using Recursive function.  <br><br>
+<pre class="language-c"><code>
+#include <stdio.h>
+int fact(int n)
+{
+if (n == 1 || n == 0) // base case
+{
+    return 1; // if this case is true then further statements will not run
+}
+return n * fact(n - 1);
+}
+int main()
+{
+int n;
+printf("Enter the number \n");
+scanf("%d", &n);
+int result = fact(n);
+printf("%d factorial is %d", n, result);
+return 0;
+}
+
+
+/*
+Output:
+
+    Enter the number 
+    5
+    5 factorial is 120
+
+*/
+</code></pre><br><br><br>
+</li>
+
+Q.8. Print "Good Morning" n times using recursive function.  <br><br>
+<pre class="language-c"><code>
+#include <stdio.h>
+void greet(int n)
+{
+if (n == 0)
+{
+    return;
+}
+printf("Good Morning \n");
+greet(n - 1);
+return;
+}
+int main()
+{
+int n;
+printf("Enter the number \n");
+scanf("%d", &n);
+greet(n);
+return 0;
+}
+
+/*
+Output:
+
+    Enter the number 
+    5
+    Good Morning 
+    Good Morning 
+    Good Morning 
+    Good Morning 
+    Good Morning 
+
+*/
+</code></pre><br><br><br>
+</li>
+
+Q.9. Print n to 1 using Recursive function  <br><br>
+<pre class="language-c"><code>
+#include <stdio.h>
+void decrease(int n)
+{
+if (n == 0)
+{
+    return;
+}
+printf("%d \n", n);
+decrease(n - 1);
+return;
+}
+int main()
+{
+int n;
+printf("Enter the number \n");
+scanf("%d", &n);
+printf("\n");
+decrease(n);
+return 0;
+}
+
+/*
+Output:
+
+    Enter the number 
+    5
+    
+    5 
+    4 
+    3 
+    2 
+    1
+
+*/
+</code></pre><br><br><br>
+</li>
+
+Q.10.Print 1 to n using recursive function.  <br><br>
+<pre class="language-c"><code>
+// Met 1 : Using Extra Parameter
+#include <stdio.h>
+void increase(int x, int n)
+{
+if (x > n)
+{
+    return;
+}
+printf("%d\n", x);
+increase(x + 1, n);
+return;
+}
+int main()
+{
+int n;
+printf("Enter the number \n");
+scanf("%d", &n);
+printf("\n");
+increase(1, n);
+return 0;
+}
+
+/*
+Output:
+
+    Enter the number 
+    5
+    
+    1
+    2
+    3
+    4
+    5
+
+
+*/
+</code></pre><br><br><br>
+</li>
+
+Q.11. Print 1 to n using recursive function.  <br><br>
+<pre class="language-c"><code>
+// Met 2 : Using After Recursive call
+#include <stdio.h>
+void increase(int n)
+{
+if (n == 0)
+{
+    return;
+}
+increase(n - 1);
+printf("%d \n", n);
+return;
+}
+int main()
+{
+int n;
+printf("Enter the number \n");
+scanf("%d", &n);
+printf("\n");
+increase(n);
+return 0;
+}
+
+/*
+Output:
+
+    Enter the number 
+    5
+    
+    1 
+    2 
+    3 
+    4 
+    5
+
+*/
+</code></pre><br><br><br>
+</li>
+
+Q.12. Print n to 1 and then n to 1 again using the recursive function  <br><br>
+<pre class="language-c"><code>
+#include<stdio.h>
+void decrease(int n){
+    if(n==0){
+        return;
+    }
+    printf("%d\n",n);
+    decrease(n-1);
+    return ;
+}
+void increase(int n){
+    if(n==0){
+        return;
+    }
+    increase(n-1);
+    printf("%d\n",n);
+    return ;
+}
+int main(){
+    int n;
+    printf("Enter the number \n");
+    scanf("%d",&n);
+    printf("\n");
+    decrease(n);
+    increase(n);
+    return 0;
+}
+
+
+/*
+Output:
+
+    Enter the number 
+    5
+    
+    5
+    4
+    3
+    2
+    1
+    1
+    2
+    3
+    4
+    5
+*/
+</code></pre><br><br><br>
+</li>
+
+Q.13. WAP to find sum of 1 to n using recursion (using parameters)  <br><br>
+<pre class="language-c"><code>
+#include <stdio.h>
+void sum(int n, int s)
+{
+if (n == 0)
+{
+    printf("%d", s);
+    return;
+}
+sum(n - 1, s + n);
+return;
+}
+int main()
+{
+int n;
+printf("Enter the number \n");
+scanf("%d", &n);
+sum(n, 0);
+return 0;
+}
+
+/*
+Output:
+
+    Enter the number 
+    5
+    15
+
+*/
+</code></pre><br><br><br>
+</li>
+
+Q.14.WAP to find sum of 1 to n using recursion (using return type) <br><br>
+<pre class="language-c"><code>
+#include <stdio.h>
+int sum(int n)
+{
+if (n==1 || n == 0)
+{
+    return n;
+}
+return n + sum(n - 1);
+}
+int main()
+{
+int n;
+printf("Enter the number \n");
+scanf("%d", &n);
+int result = sum(n);
+printf("The sum of 1 to %d is %d", n, result);
+return 0;
+}
+
+/*
+Output:
+
+    Enter the number 
+    5
+    The sum of 1 to 5 is 15
+
+*/
+</code></pre><br><br><br>
+</li>
+
+Q.15. Make a function which calculates a raised to power b using recursive function  <br><br>
+<pre class="language-c"><code>
+#include <stdio.h>
+int power(int a, int b)
+{
+if (b == 0)
+{
+    return 1;
+}
+else if (b == 1)
+{
+    return a;
+}
+return a * power(a, b - 1);
+}
+int main()
+{
+int a, b;
+printf("Enter the number \n");
+scanf("%d", &a);
+printf("Enter the power \n");
+scanf("%d", &b);
+int result = power(a, b);
+printf("%d raised to power %d is %d", a, b, result);
+return 0;
+}
+
+
+/*
+Output:
+
+    Enter the number 
+    5
+    Enter the power 
+    2
+    5 raised to power 2 is 25
+
+*/
+</code></pre><br><br><br>
+</li>
+
+Q.16. WAP to calculate nth Fibonacci term using recursion <br><br>
+<pre class="language-c"><code>
+#include<stdio.h>
+int fib(int n){
+    if(n==1 || n==2){
+        return 1;
+    }
+    else if(n<=0){
+        return 0;
+    }
+    return fib(n-1)+fib(n-2);
+}
+int main(){
+    int n;
+    printf("Enter the number \n");
+    scanf("%d",&n);
+    int result=fib(n);
+    printf("The %dth Fibonacci Number is %d",n,result);
+    return 0;
+}
+
+/*
+Output:
+    Enter the number 
+    5
+    The 5th Fibonacci Number is 5
+
+*/
+</code></pre><br><br><br>
+</li>
+
+Q.17. WAP to calculate number of ways of climbing a stair path till the nth stair using recursive function.
+<br><br>
+Condition: Single and double steps are only allowed <br><br>
+<pre class="language-c"><code>
+#include <stdio.h>
+int stair(int n)
+{
+if (n == 1 || n == 2)
+{
+    return n;
+}
+int totalways = stair(n - 1) + stair(n - 2);
+return totalways;
+}
+int main()
+{
+int n;
+printf("Enter the number \n");
+scanf("%d", &n);
+int ways = stair(n);
+printf("No. of ways is %d", ways);
+return 0;
+}
+
+/*
+Output:
+
+    Enter the number 
+    5
+    No. of ways is 8
+
+*/
+</code></pre><br><br><br>
+</li>
+
+Q.18. WAP to calculate number of ways of climbing a stair path till the nth stair using recursive function.
+<br><br>
+Condition: Single, double and triple steps are only allowed  <br><br>
+<pre class="language-c"><code>
+#include <stdio.h>
+int stair(int n)
+{
+if (n == 1 || n == 2)
+{
+    return n;
+}
+else if (n == 3)
+{
+    return n + 1;
+}
+int totalways = stair(n - 1) + stair(n - 2) + stair(n - 3);
+return totalways;
+}
+int main()
+{
+int n;
+printf("Enter the number \n");
+scanf("%d", &n);
+int ways = stair(n);
+printf("No. of ways is %d", ways);
+return 0;
+}
+
+/*
+Output:
+
+    Enter the number 
+    5
+    No. of ways is 13
+
+
+*/
+</code></pre><br><br><br>
+</li>
+
+Q.19. WAP to find a raised to power b using logarithmic form using recursive function.
+<br><br>
+(This is just for reduction of the number of calls)  <br><br>
+<pre class="language-c"><code>
+#include <stdio.h>
+int powerlog(int a, int b)
+{
+// base case
+if (b == 1)
+{
+    return a;
+}
+else if (b == 0)
+{
+    return 1;
+}
+int ans = powerlog(a, b / 2);
+if (b % 2 == 0)
+{ // even case
+    return ans * ans;
+}
+else
+{ // odd case
+    return ans * ans * a;
+}
+}
+int main()
+{
+int a, b;
+printf("Enter the number \n");
+scanf("%d", &a);
+printf("Enter the power \n");
+scanf("%d", &b);
+int result = powerlog(a, b);
+printf("%d raised to power %d is %d", a, b, result);
+return 0;
+}
+
+
+/*
+Output:
+
+    Enter the number 
+    5
+    Enter the power 
+    3
+    5 raised to power 3 is 125
+
+*/
+</code></pre><br><br><br>
+</li>
+
+Q.20. WAP to find the number of ways to solve a maze path using a recursive function. (using 4 parameters)
+<br><br>
+Conditions: Can go only downwards and rightways <br><br>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Can take only one step at a time <br><br>
+<pre class="language-c"><code>
+#include <stdio.h>
+int maze(int cr, int cc, int er, int ec)
+{
+int rightways = 0;
+int downways = 0;
+if (cr == er || cc == ec)
+{
+    return 1;
+}
+else if (cr == er)
+{                                          // only rightways call
+    rightways += maze(cr, cc + 1, er, ec); // a+=b -> a = a+b
+}
+else if (cc == ec)
+{ // only downwards call
+    downways += maze(cr + 1, cc, er, ec);
+}
+else if (cr < er && cc < ec)
+{
+    rightways += maze(cr, cc + 1, er, ec);
+    downways += maze(cr + 1, cc, er, ec);
+}
+int totalways = rightways + downways;
+return totalways;
+}
+int main()
+{
+int n; // Rows
+printf("Enter the number of rows of maze \n");
+scanf("%d", &n);
+int m; // Columns
+printf("Enter the number of columns of maze \n");
+scanf("%d", &m);
+int noofways = maze(1, 1, n, m);
+printf("The number of ways are %d", noofways);
+return 0;
+}
+
+/*
+Output:
+
+    Enter the number of rows of maze 
+    3
+    Enter the number of columns of maze 
+    3
+    The number of ways are 6
+
+*/
+</code></pre><br><br><br>
+</li>
+
+Q.21.WAP to find the number of ways to solve a maze path using a recursive function. (using only rows and columns :  parameters) <br><br>
+
+Conditions: Can go only downwards and rightways <br><br>
+
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Can take only one step at a time  <br><br>
+<pre class="language-c"><code>
+#include <stdio.h>
+int maze(int n, int m)
+{
+int rightways = 0;
+int downways = 0;
+if (n == 1 && m == 1)
+{
+    return 1;
+}
+else if (n == 1)
+{ // cannot go down
+    rightways += maze(n, m - 1);
+}
+else if (m == 1)
+{ // cannot go right
+    downways += maze(n - 1, m);
+}
+else if (n > 1 && m > 1)
+{
+    rightways += maze(n, m - 1);
+    downways += maze(n - 1, m);
+}
+int totalways = rightways + downways;
+return totalways;
+}
+int main()
+{
+int n; // Rows
+printf("Enter the number of rows of maze \n");
+scanf("%d", &n);
+int m; // Columns
+printf("Enter the number of columns of maze \n");
+scanf("%d", &m);
+int noofways = maze(n, m);
+printf("The number of ways are %d", noofways);
+return 0;
+}
+
+
+/*
+Output:
+    
+    Enter the number of rows of maze 
+    3
+    Enter the number of columns of maze 
+    4
+    The number of ways are 10
+
+*/
+</code></pre><br><br><br>
+</li>
+
+Q.22.  WAP displaying pre, in and psot concept using recursive function <br><br>
+<pre class="language-c"><code>
+#include <stdio.h>
+void preinpost(int n)
+{
+if (n == 0)
+{
+    return;
+}
+printf("Pre %d \n", n);
+preinpost(n - 1);
+printf("In %d \n", n);
+preinpost(n - 1);
+printf("Post %d \n", n);
+return;
+}
+int main()
+{
+int n;
+printf("Enter the number \n");
+scanf("%d", &n);
+preinpost(n);
+return 0;
+}
+
+/*
+Output:
+
+    Enter the number 
+    2
+    Pre 2 
+    Pre 1 
+    In 1 
+    Post 1 
+    In 2 
+    Pre 1 
+    In 1 
+    Post 1 
+    Post 2 
+
+*/
+</code></pre><br><br><br>
+</li>
+
+Q.23. Print Zig-Zag Pattern using recursive function<br><br>
+Input        &nbsp &nbsp &nbsp &nbspOutput      <br><br>
+1           &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp111     <br><br>
+2           &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp211121112       <br><br>
+3           &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp321112111232111211123       <br><br>
+<pre class="language-c"><code>
+#include <stdio.h>
+void zigzag(int n)
+{
+if (n == 0)
+{
+    return;
+}
+printf("%d \n", n);
+zigzag(n - 1);
+printf("%d \n", n);
+zigzag(n - 1);
+printf("%d \n", n);
+return;
+}
+int main()
+{
+int n;
+printf("Enter the number \n");
+scanf("%d", &n);
+zigzag(n);
+return 0;
+}
+
+/*
+Output:
+
+    Enter the number 
+    2
+    
+    2 
+    1 
+    1 
+    1 
+    2 
+    1 
+    1 
+    1 
+    2
+
+
+*/
+</code></pre><br><br><br>
+</li>
+
+Q.24. WAP to print tower of HANOI using recursive function <br><br>
+<pre class="language-c"><code>
+#include <stdio.h>
+void tower(int n, char s, char h, char d)
+{
+if (n == 0)
+{
+    return;
+}
+tower(n - 1, s, d, h);
+printf("%c -> %c \n", s, d);
+tower(n - 1, h, s, d);
+return;
+}
+int main()
+{
+int n;
+printf("Enter number of discs \n");
+scanf("%d", &n);
+tower(n, 'A', 'B', 'C');
+return 0;
+}
+
+
+/*
+Output:
+
+    Enter number of discs 
+    3
+    A -> C 
+    A -> B 
+    C -> B 
+    A -> C 
+    B -> A 
+    B -> C 
+    A -> C 
+
+*/
+</code></pre><br><br><br>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+<li><b>Programs on 1-D Arrays </b><br><br>
+    Q.1. WAP to declare an array and print the elements in reverse order  <br><br>
+    <pre class="language-c"><code>
+#include <stdio.h>
+int main()
+{
+int a[5] = {1, 2, 3, 4, 5};
+for (int i = 4; i >= 0; i--)
+{
+    printf("%d ", a[i]);
+}
+return 0;
+}
+
+/*
+Output:
+    5 4 3 2 1
+
+*/
+    </code></pre><br><br><br>
+</li>
+
+Q.2. Given an array of marks of students, if the mark of any student is less than 35 print its roll number (index number)
+<br><br>
+    <pre class="language-c"><code>
+#include <stdio.h>
+int main()
+{
+int arr[10];
+int a = 1;
+for (int i = 0; i < 10; i++)
+{
+    printf("Enter the marks of %d student \n", a);
+    scanf("%d", &arr[i]);
+    a++;
+}
+for (int i = 0; i < 10; i++)
+{
+    if (arr[i] < 35)
+    {
+        printf("%d", i);
+    }
+}
+return 0;
+}
+    </code></pre><br><br><br>
+</li>
+
+Q.3. Calculate the sum of all elements in the given array  <br><br>
+    <pre class="language-c"><code>
+#include <stdio.h>
+int main()
+{
+int arr[5];
+printf("Enter five elements of array \n");
+for (int i = 0; i < 5; i++)
+{
+    scanf("%d", &arr[i]);
+}
+int sum = 0;
+for (int i = 0; i < 5; i++)
+{
+    sum = sum + arr[i];
+}
+printf("The sum of array elements is %d", sum);
+    return 0;
+}
+
+/*
+Output:
+    Enter five elements of array 
+    1 2 1 2 4
+    The sum of array elements is 10
+
+*/
+    </code></pre><br><br><br>
+</li>
+
+Q.4. Find the maximum value out of the elements in array  <br><br>
+    <pre class="language-c"><code>
+#include <stdio.h>
+int main()
+{
+int n;
+printf("Enter the number of elements in array \n");
+scanf("%d", &n);
+int arr[n];
+printf("Enter the elements in array \n");
+for (int i = 0; i < n; i++)
+{
+    scanf("%d", &arr[i]);
+}
+int max = arr[0];
+for (int i = 0; i < n; i++)
+{
+    if (arr[i] > max)
+    {
+        max = arr[i];
+    }
+}
+printf("The maximum element in the array is %d", max);
+return 0;
+}
+
+/*
+Output:
+    
+    Enter the number of elements in array 
+    3
+    Enter the elements in array 
+    1 4 2
+    The maximum element in the array is 4
+
+*/
+    </code></pre><br><br><br>
+</li>
+
+Q.5.  Given an array of integers, change the value of all odd elements to its second multiple and increment all even all indexed values by 10.  <br><br>
+    <pre class="language-c"><code>
+#include <stdio.h>
+int main()
+{
+int arr[8];
+printf("Enter the elements in array \n");
+for (int i = 0; i < 8; i++)
+{
+    scanf("%d", &arr[i]);
+}
+for (int i = 0; i < 8; i++)
+{
+    if (arr[i] % 2 == 0)
+    {
+        arr[i] = arr[i] * 2;
+    }
+    else
+    {
+        arr[i] = arr[i] + 10;
+    }
+}
+printf("The new array elements are \n");
+for (int i = 0; i < 8; i++)
+{
+    printf("%d ", arr[i]);
+}
+
+return 0;
+}
+
+
+/*
+Output:
+
+    Enter the elements in array 
+    1 2 3 4 5 6 7 8   
+    The new array elements are 
+    11 4 13 8 15 12 17 16
+
+*/
+    </code></pre><br><br><br>
+</li>
+
+Q.6. Count the number of elements in given array greater than a given number x <br><br>
+    <pre class="language-c"><code>
+#include <stdio.h>
+int main()
+{
+int arr[5];
+printf("Enter the elements in array \n");
+for (int i = 0; i < 5; i++)
+{
+    scanf("%d", &arr[i]);
+}
+int x = 30;
+int count = 0;
+for (int i = 0; i < 5; i++)
+{
+    if (arr[i] > x)
+    {
+        count++;
+    }
+    else
+    {
+        continue;
+    }
+}
+printf("%d elements are greater than x in array", count);
+
+return 0;
+}
+
+/*
+Output:
+
+    Enter the elements in array
+    75 41 27 30 16
+    2 elements are greater than x in array
+*/
+    </code></pre><br><br><br>
+</li>
+
+Q.7. Find the difference between sum of elements at even indices to the sum of elements at odd indices <br><br>
+    <pre class="language-c"><code>
+#include <stdio.h>
+int main()
+{
+int arr[5];
+printf("Enter the elements in array \n");
+for (int i = 0; i < 5; i++)
+{
+    scanf("%d", &arr[i]);
+}
+int a = 0, b = 0, diff = 0; // a -> even and b -> odd
+for (int i = 0; i < 5; i++)
+{
+    if (i % 2 == 0)
+    {
+        a = a + arr[i];
+    }
+    else
+    {
+        b = b + arr[i];
+    }
+}
+if (a > b)
+{
+    diff = a - b;
+}
+else
+{
+    diff = b - a;
+}
+printf("The difference is %d", diff);
+
+return 0;
+}
+
+/*
+Output:
+
+    Enter the elements in array 
+    1 4 7 6 12
+    The difference is 10
+
+*/
+    </code></pre><br><br><br>
+</li>
+
+Q.8. Find the total number of pairs in array whose sum is equal to the given value x  <br><br>
+    <pre class="language-c"><code>
+#include <stdio.h>
+int main()
+{
+int x = 20;
+int arr[10];
+printf("Enter the elements in array \n");
+for (int i = 0; i < 10; i++)
+{
+    scanf("%d", &arr[i]);
+}
+int count = 0;
+printf("\n");
+for (int i = 0; i < 10; i++)
+{
+    for (int j = i + 1; j < 10; j++)
+    {
+        if (arr[i] + arr[j] == x)
+        {
+            printf("(%d,%d)", arr[i], arr[j]);
+            count++;
+        }
+        else
+        {
+            continue;
+        }
+    }
+}
+printf(" \nThere are %d pairs in array that sum up to x", count);
+
+return 0;
+}
+
+
+/*
+Output:
+    Enter the elements in array 
+    1 14 19 6 7 2 4 16 10 18
+    There are 4 pairs in array that sum up to x
+
+*/
+    </code></pre><br><br><br>
+</li>
+
+Q.9. Find the second largest element in the given array  <br><br>
+    <pre class="language-c"><code>
+#include <stdio.h>
+#include <limits.h>
+int main()
+{
+int arr[5];
+printf("Enter the elements in array \n");
+for (int i = 0; i < 5; i++)
+{
+    scanf("%d", &arr[i]);
+}
+int max = INT_MIN;
+int max2 = INT_MIN;
+for (int i = 0; i < 5; i++)
+{
+    if (max < arr[i])
+    {
+        max2 = max;
+        max = arr[i];
+    }
+    else if (max2 < arr[i] && max != arr[i])
+    {
+        max2 = arr[i];
+    }
+}
+
+printf("The second maximum in array is %d", max2);
+
+return 0;
+}
+
+
+/*
+Output:
+
+    Enter the elements in array 
+    5 5 3 2 1 
+    The second maximum in array is 3
+
+*/
+    </code></pre><br><br><br>
+</li>
+
+Q.10. Copy the elements of one array into another array in the reverse order.  <br><br>
+    <pre class="language-c"><code>
+#include <stdio.h>
+int main()
+{
+int arr1[5], arr2[5];
+printf("Enter the elements in array \n");
+for (int i = 0; i < 5; i++)
+{
+    scanf("%d", &arr1[i]);
+}
+int a = 4;
+for (int i = 0; i < 5; i++)
+{
+    arr2[a] = arr1[i];
+    a--;
+}
+printf("The copied array is \n");
+for (int i = 0; i < 5; i++)
+{
+    printf("%d ", arr2[i]);
+}
+
+return 0;
+}
+
+/*
+Output:
+    Enter the elements in array 
+    3 7 9 1 8 
+    The copied array is 
+    8 1 9 7 3
+
+*/
+    </code></pre><br><br><br>
+</li>
+
+Q.11.Write a program to reverse an array without using an extra array using a function. <br><br>
+    <pre class="language-c"><code>
+#include <stdio.h>
+void rev(int arr[])
+{
+int i = 0;
+int j = 4; // index - 1
+while (i != j)
+{
+    int temp = arr[i];
+    arr[i] = arr[j];
+    arr[j] = temp;
+    i++;
+    j--;
+}
+}
+int main()
+{
+int arr[5];
+printf("Enter the elements in array \n");
+for (int i = 0; i < 5; i++)
+{
+    scanf("%d", &arr[i]);
+}
+rev(arr);
+printf("\n The reversed elements of array are \n");
+for (int i = 0; i < 5; i++)
+{
+    printf("%d ", arr[i]);
+}
+return 0;
+}
+
+
+/*
+Output:
+    Enter the elements in array 
+    1 2 3 4 5 
+    
+     The reversed elements of array are 
+    5 4 3 2 1 
+
+*/
+    </code></pre><br><br><br>
+</li>
+
+Q.12. If an array contains n elements, then check if the array is pallindrome or not (121 is a pallindrome)  <br><br>
+    <pre class="language-c"><code>
+#include <stdio.h>
+int main()
+{
+int n;
+printf("Enter the number of elements in array \n");
+scanf("%d", &n);
+int arr[n];
+printf("Enter the elements in array \n");
+for (int i = 0; i < n; i++)
+{
+    scanf("%d", &arr[i]);
+}
+int count = 0;
+for (int i = 0; i < n; i++)
+{
+    if (arr[i] != arr[n - 1 - i])
+    {
+        count = 1;
+        break;
+    }
+    else
+    {
+        continue;
+    }
+}
+if (count == 0)
+{
+    printf("Array is a pallindrome");
+}
+else
+{
+    printf("Not a pallindrome");
+}
+
+return 0;
+}
+
+/*
+Output:
+
+    Enter the number of elements in array 
+    3
+    Enter the elements in array 
+    1 2 1
+    Array is a pallindrome
+
+*/
+    </code></pre><br><br><br>
+</li>
+
+Q.13. Rotate the given array 'arr' by k steps where k is non-negative. <br><br>
+
+Note: k can be greater than n as well, where n is the size of the array.<br><br>
+    <pre class="language-c"><code>
+#include <stdio.h>
+void rev(int arr[], int a, int b)
+{
+for (int i = a, j = b; i < j; i++, j--)
+{
+    int temp = arr[i];
+    arr[i] = arr[j];
+    arr[j] = temp;
+}
+}
+int main()
+{
+int n = 5;
+int arr[n];
+printf("Enter the elements in array \n");
+for (int i = 0; i < 5; i++)
+{
+    scanf("%d", &arr[i]);
+}
+int k = 3;
+
+k = k % n;          // 1
+rev(arr, 0, n - 1); // 2 Reverse the entire array
+rev(arr, 0, k - 1); // 3 Reverse the first k elements
+rev(arr, k, n - 1); // 4 Reverse the last n elements
+printf("The modified array is \n");
+for (int i = 0; i < 7; i++)
+{
+    printf("%d ", arr[i]);
+}
+
+return 0;
+}
+
+
+/*
+Output:  
+
+    Enter the elements in array 
+    1 2 3 4 5 
+    The modified array is 
+    3 4 5 1 2 
+
+*/
+    </code></pre><br><br><br>
+</li>
+
+Q.14. WAP to search element x in array. <br><br>
+    <pre class="language-c"><code>
+#include <stdio.h>
+#include <stdbool.h>
+int main()
+{
+int arr[5];
+printf("Enter the elements in array \n");
+for (int i = 0; i < 5; i++)
+{
+    scanf("%d", &arr[i]);
+}
+bool a = true; // element is not in array
+int x = 15;
+for (int i = 0; i < 5; i++)
+{
+    if (arr[i] == x)
+    {
+        a = false;
+    }
+    else
+    {
+        continue;
+    }
+}
+if (a == true)
+{
+    printf("\nElement is not in array");
+}
+else
+{
+    printf("\nElement is present in the array");
+}
+
+return 0;
+}
+
+
+/*
+Output:
+
+    Enter the elements in array 
+    1 2 15 4 5
+    Element is present in the array
+
+
+*/
+    </code></pre><br><br><br>
+</li>
+
+Q.15. Given an array containing elements from 1 to 100 except one element in this range is missing. Find the missing element.  <br><br>
+    <pre class="language-c"><code>
+#include <stdio.h>
+#include <stdbool.h>
+int main()
+{
+// Sum of n natural numbers = n(n+1)/2
+int sum1 = (100 * (100 + 1)) / 2;
+int arr[100];
+int sum2 = 0;
+for (int i = 0; i < 100; i++)
+{
+    sum2 = sum2 + i;
+}
+printf("The missing element is %d", sum1 - sum2);
+return 0;
+}
+
+    </code></pre><br><br><br>
+</li>
+
+Q.16. WAP to find a dublicate element in a given array of integers.  <br><br>
+    <pre class="language-c"><code>
+#include <stdio.h>
+#include <stdbool.h>
+int main()
+{
+int arr[5] = {1, 2, 1, 4, 5};
+for (int i = 0; i < 5; i++)
+{
+    for (int j = i + 1; j < 5; j++)
+    {
+        if (arr[i] == arr[j])
+        {
+            printf("%d is the dublicate element", arr[i]);
+            break;
+        }
+    }
+}
+
+return 0;
+}
+
+/*
+
+Output:
+
+    1 is the dublicate element
+
+*/
+    </code></pre><br><br><br>
+</li>
+
+Q.17. Find the unique number in a given array where all the elements are being repeated twice with one value being unique  <br><br>
+    <pre class="language-c"><code>
+#include <stdio.h>
+#include <stdbool.h>
+int main()
+{
+int arr[7] = {1, 3, 6, 1, 1, 2, 3};
+for (int i = 0; i < 7; i++)
+{
+    bool a = false;
+    for (int j = i + 1; j < 7; j++) // to check the same elements
+    {
+        if (arr[i] == arr[j])
+        {
+            a = true;
+        }
+    }
+    if (a == false) // for checking if any unique element is found
+    {
+        printf("%d", arr[i]);
+        break;
+    }
+}
+
+return 0;
+}
+
+/*
+Output:
+
+    6
+
+*/
+    </code></pre><br><br><br>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+<li><b>Programs on 2-D Arrays </b><br><br>
+    Q.1. Write a program to declare a 3x3 2D array and print it in Matrix Form<br><br>
+    <pre class="language-c"><code>
+#include &lt;stdio.h&gt;
+int main()
+{
+// int arr[4][2] = {{1,2}, {3,4}, {5,6},{7,8}};
+            //or
+int arr[4][2]= {1,2,3,4,5,6,7,8};
+printf("The array in matrix form is \n");
+for (int i = 0; i &lt; 4; i++)
+{
+    for (int j = 0; j &lt; 2; j++)
+    {
+        printf("%d ", arr[i][j]);
+    }
+    printf("\n");
+}
+return 0;
+}
+
+
+/*
+Output:
+
+    The array in matrix form is 
+    1 2 
+    3 4 
+    5 6 
+    7 8 
+
+*/
+    </code></pre><br><br><br>
+</li>
+
+Q.2. Write a program to store roll number and marks obtained by 4 students side by side in a matrix.  <br><br>
+<pre class="language-c"><code>
+#include &lt;stdio.h&gt;
+int main()
+{
+int arr[4][2];
+printf("Enter the roll numbers and their marks \n");
+for (int i = 0; i &lt; 4; i++)
+{
+    for (int j = 0; j &lt; 2; j++)
+    {
+        scanf("%d", &arr[i][j]);
+    }
+}
+printf("The roll numbers and marks in matrix form are \n");
+for (int i = 0; i &lt; 4; i++)
+{
+    for (int j = 0; j &lt; 2; j++)
+    {
+        printf("%d  ", arr[i][j]);
+    }
+    printf("\n");
+}
+return 0;
+}
+
+/*
+Output:
+
+    Enter the roll numbers and their marks 
+    1 45 2 39 3 84 4 78
+    The roll numbers and marks in matrix form are 
+    1  45  
+    2  39  
+    3  84  
+    4  78 
+
+*/
+</code></pre><br><br><br>
+</li>
+
+Q.3. WAP to store 10 at every index of a 2D matrix with 5 rows and 5 columns  <br><br>
+<pre class="language-c"><code>
+#include &lt;stdio.h&gt;
+int main()
+{
+int arr[5][5];
+for (int i = 0; i &lt; 5; i++)
+{
+    for (int j = 0; j &lt; 5; j++)
+    {
+        printf("10 ");
+    }
+    printf("\n");
+}
+return 0;
+}
+
+/*
+Output:
+
+    10 10 10 10 10 
+    10 10 10 10 10 
+    10 10 10 10 10 
+    10 10 10 10 10 
+    10 10 10 10 10 
+
+*/
+</code></pre><br><br><br>
+</li>
+
+Q.4. WAP to add two matrices <br><br>
+<pre class="language-c"><code>
+#include &lt;stdio.h&gt;
+int main()
+{
+int arr1[3][3], arr2[3][3];
+printf("Enter the elements in first array \n");
+for (int i = 0; i &lt; 3; i++)
+{
+    for (int j = 0; j &lt; 3; j++)
+    {
+        scanf("%d", &arr1[i][j]);
+    }
+}
+printf("Enter the elements in second array \n");
+for (int i = 0; i &lt; 3; i++)
+{
+    for (int j = 0; j &lt; 3; j++)
+    {
+        scanf("%d", &arr2[i][j]);
+    }
+}
+int sum[3][3];
+printf("The sum of two arrays is \n");
+for (int i = 0; i &lt; 3; i++)
+{
+    for (int j = 0; j &lt; 3; j++)
+    {
+        sum[i][j] = arr1[i][j] + arr2[i][j];
+        printf("%d ", sum[i][j]);
+    }
+    printf("\n");
+}
+return 0;
+}
+
+
+/*
+    Output:
+
+    Enter the elements in first array 
+    1 1 1 
+    1 1 1
+    1 1 1 
+    Enter the elements in second array 
+    1 1 1 
+    1 1 1 
+    1 1 1 
+    The sum of two arrays is 
+    2 2 2 
+    2 2 2 
+    2 2 2 
+
+*/
+</code></pre><br><br><br>
+</li>
+
+Q.5. WAP to add two matrices without using extra array  <br><br>
+<pre class="language-c"><code>
+#include &lt;stdio.h&gt;
+int main()
+{
+int arr1[2][2], arr2[2][2];
+printf("Enter the elements in first array \n");
+for (int i = 0; i &lt; 2; i++)
+{
+    for (int j = 0; j &lt; 2; j++)
+    {
+        scanf("%d", &arr1[i][j]);
+    }
+}
+printf("Enter the elements in second array \n");
+for (int i = 0; i &lt; 2; i++)
+{
+    for (int j = 0; j &lt; 2; j++)
+    {
+        scanf("%d", &arr2[i][j]);
+    }
+}
+printf("The sum of the array is \n");
+for (int i = 0; i &lt; 2; i++)
+{
+    for (int j = 0; j &lt; 2; j++)
+    {
+        arr1[i][j] += arr2[i][j];
+        printf("%d ", arr1[i][j]);
+    }
+    printf("\n");
+}
+return 0;
+}
+
+/*
+Output:
+
+    Enter the elements in first array 
+    1 2 
+    3 4 
+    Enter the elements in second array 
+    1 2 
+    3 4 
+    The sum of the array is 
+    2 4 
+    6 8
+
+*/
+</code></pre><br><br><br>
+</li>
+
+Q.6. WAP to find the sum of a matrix nxm.  <br><br>
+<pre class="language-c"><code>
+#include &lt;stdio.h&gt;
+int main()
+{
+int r, c;
+printf("Enter the number of rows : ");
+scanf("%d", &r);
+printf("Enter the number of columns : ");
+scanf("%d", &c);
+int arr[r][c];
+printf("Enter the elements in array \n");
+for (int i = 0; i &lt; r; i++)
+{
+    for (int j = 0; j &lt; c; j++)
+    {
+        scanf("%d", &arr[i][j]);
+    }
+}
+int sum = 0;
+for (int i = 0; i &lt; r; i++)
+{
+    for (int j = 0; j &lt; c; j++)
+    {
+        sum = sum + arr[i][j];
+    }
+}
+printf("The sum of the matrix %dx%d is %d", r, c, sum);
+return 0;
+}
+
+
+/*
+Output:
+
+    Enter the number of rows : 3
+    Enter the number of columns : 3
+    Enter the elements in array 
+    1 1 1 
+    1 1 1
+    1 1 1
+    The sum of the matrix 3x3 is 9
+
+*/
+</code></pre><br><br><br>
+</li>
+
+Q.7. WAP to find the maximum and minimum element in the 2D array and also print it along with its index  <br><br>
+<pre class="language-c"><code>
+#include &lt;stdio.h&gt;
+int main()
+{
+int arr[3][3];
+printf("Enter the elements in array \n");
+for (int i = 0; i &lt; 3; i++)
+{
+    for (int j = 0; j &lt; 3; j++)
+    {
+        scanf("%d", &arr[i][j]);
+    }
+}
+int max = arr[1][1], min = arr[1][1];
+int a1, a2;
+int b1, b2;
+for (int i = 0; i &lt; 3; i++)
+{
+    for (int j = 0; j &lt; 3; j++)
+    {
+        if (arr[i][j] &gt; max)
+        {
+            int temp1 = arr[i][j];
+            arr[i][j] = max;
+            max = temp1;
+            a1 = i;
+            a2 = j;
+        }
+        else if (arr[i][j] &lt; min)
+        {
+            int temp2 = arr[i][j];
+            arr[i][j] = min;
+            min = temp2;
+            b1 = i;
+            b2 = j;
+        }
+    }
+}
+printf("The maximum element is %d with index (%d,%d)", max, a1, a2);
+printf("The minimum element is %d with index (%d,%d)", min, b1, b2);
+return 0;
+}
+
+
+/*
+Output:
+
+    Enter the elements in array
+    1 7 4
+    3 2 5
+    6 9 3
+    The maximum element is 9 with index (2,1)The minimum element is 1 with index (0,0) 
+
+*/
+</code></pre><br><br><br>
+</li>
+
+Q.8. Given a matrix a of dimension nxm and 2 co-ordinates (l1,r1) and (l2,r2). Return the sum of the rectangle from (l1,r1) and (l2,r2). <br><br>
+<pre class="language-c"><code>
+#include &lt;stdio.h&gt;
+int main()
+{
+int r, c;
+printf("Enter the number of rows: ");
+scanf("%d", &r);
+printf("Enter the number of columns: ");
+scanf("%d", &c);
+int arr[r][c];
+printf("Enter the elements in array \n");
+for (int i = 0; i &lt; r; i++)
+{
+    for (int j = 0; j &lt; c; j++)
+    {
+        scanf("%d", &arr[i][j]);
+    }
+}
+int l1, r1, l2, r2;
+printf("Enter the first co ordinate : ");
+scanf("%d%d", &l1, &r1);
+printf("Enter the second co ordinate : ");
+scanf("%d%d", &l2, &r2);
+int sum = 0;
+for (int i = l1; i <= l2; i++)
+{
+    for (int j = r1; j <= r2; j++)
+    {
+        sum += arr[i][j];
+    }
+}
+printf("The sum of the array elements is %d", sum);
+return 0;
+}
+
+
+/*
+Output:
+
+    Enter the number of rows: 3 
+    Enter the number of columns: 3 
+    Enter the elements in array 
+    1 2 3 
+    4 5 6 
+    7 8 9 
+    Enter the first co ordinate : 0 1 
+    Enter the second co ordinate : 2 2 
+    The sum of the array elements is 33
+
+
+*/
+</code></pre><br><br><br>
+</li>
+
+Q.9.WAP to print the row number having the maximum sum in a given matrix and the maximum sum  <br><br>
+<pre class="language-c"><code>
+#include &lt;stdio.h&gt;
+int main()
+{
+int arr[3][3];
+printf("Enter the elements in array \n");
+for (int i = 0; i &lt; 3; i++)
+{
+    for (int j = 0; j &lt; 3; j++)
+    {
+        scanf("%d", &arr[i][j]);
+    }
+}
+int max = 0;
+int a;
+for (int i = 0; i &lt; 3; i++)
+{
+    int sum = 0;
+    for (int j = 0; j &lt; 3; j++)
+    {
+        sum += arr[i][j]; // a+=b -> a= a+b
+    }
+    if (max &lt; sum)
+    {
+        max = sum;
+        a = i;
+    }
+}
+printf("The maximum sum is %d and its row no. is %d", max, a);
+return 0;
+}
+
+
+/*
+Output:
+
+    Enter the elements in array 
+    1 2 9 
+    1 0 1 
+    2 3 4 
+    The maximum sum is 12 and its row no. is 0
+
+*/
+</code></pre><br><br><br>
+</li>
+
+Q.10. Given a matrix having only 0-1 only, find the row with the maximum number of 1's.  <br><br>
+<pre class="language-c"><code>
+#include &lt;stdio.h>
+int main()
+{
+int arr[3][3];
+printf("Enter the elements in array \n");
+for (int i = 0; i &lt; 3; i++)
+{
+    for (int j = 0; j &lt; 3; j++)
+    {
+        scanf("%d", &arr[i][j]);
+    }
+}
+int maxcount = 0;
+int a;
+for (int i = 0; i &lt; 3; i++)
+{
+    int max = 0;
+    for (int j = 0; j &lt; 3; j++)
+    {
+        if (arr[i][j] == 1)
+        {
+            max++;
+        }
+    }
+    if (maxcount &lt; max)
+    {
+        maxcount = max;
+        a = i;
+    }
+}
+printf("There are %d 1's in the %dth row", maxcount, a);
+return 0;
+}
+
+/*
+Output:
+
+    Enter the elements in array 
+    0 1 1
+    1 0 0 
+    1 1 1
+    There are 3 1's in the 2th row
+
+*/
+</code></pre><br><br><br>
+</li>
+
+Q.11. Write a program to print the transpose if the matrix entered by the user  <br><br>
+<pre class="language-c"><code>
+#include &lt;stdio.h&gt;
+int main()
+{
+int r, c;
+printf("Enter the number of rows : ");
+scanf("%d", &r);
+printf("Enter the number of columns : ");
+scanf("%d", &c);
+int arr[r][c];
+printf("Enter the elements in array \n");
+for (int i = 0; i &lt; r; i++)
+{
+    for (int j = 0; j &lt; c; j++)
+    {
+        scanf("%d", &arr[i][j]);
+    }
+}
+printf("The transpose of the matrix is \n");
+for (int i = 0; i &lt; c; i++)
+{
+    for (int j = 0; j &lt; r; j++)
+    {
+        printf("%d ", arr[j][i]);
+    }
+    printf("\n");
+}
+return 0;
+}
+
+
+/*
+Output:
+
+    Enter the number of rows : 3
+    Enter the number of columns : 3
+    Enter the elements in array 
+    1 2 3 
+    4 5 6 
+    7 8 9 
+    The transpose of the matrix is 
+    1 4 7 
+    2 5 8 
+    3 6 9 
+
+*/
+</code></pre><br><br><br>
+</li>
+
+Q.12. Write a program to print the transpose of the matrix entered by the user and store it in a seperate matrix.  <br><br>
+<pre class="language-c"><code>
+#include &lt;stdio.h&gt;
+int main()
+{
+int r, c;
+printf("Enter the number of rows : ");
+scanf("%d", &r);
+printf("Enter the number of columns : ");
+scanf("%d", &c);
+int arr[r][c];
+printf("Enter the elements in array \n");
+for (int i = 0; i &lt; r; i++)
+{
+    for (int j = 0; j &lt; c; j++)
+    {
+        scanf("%d", &arr[i][j]);
+    }
+}
+int trans[c][r];
+for (int i = 0; i &lt; c; i++)
+{
+    for (int j = 0; j &lt; r; j++)
+    {
+        trans[j][i] = arr[i][j];
+    }
+}
+printf("The transpose of the matrix is \n");
+for (int i = 0; i &lt; c; i++)
+{
+    for (int j = 0; j &lt; r; j++)
+    {
+        printf("%d ", trans[i][j]);
+    }
+    printf("\n");
+}
+return 0;
+}
+
+/*
+Output:
+
+    Enter the number of rows : 3 
+    Enter the number of columns : 3
+    Enter the elements in array 
+    1 2 3 
+    4 5 6 
+    7 8 9 
+    The transpose of the matrix is 
+    1 4 7 
+    2 5 8 
+    3 6 9 
+
+*/
+</code></pre><br><br><br>
+</li>
+
+Q.13. WAP to change the given nxn / square matrix into its transpose in the same matrix.  <br><br>
+<pre class="language-c"><code>
+#include &lt;stdio.h&lt;
+int main()
+{
+int arr[3][3];
+printf("Enter the elements in array \n");
+for (int i = 0; i &lt; 3; i++)
+{
+    for (int j = 0; j &lt; 3; j++)
+    {
+        scanf("%d", &arr[i][j]);
+    }
+}
+for (int i = 0; i &lt; 3; i++)
+{
+    for (int j = i; j &lt; 3; j++) // to avoid repetition j starts from i (Met 1)
+    {
+        int temp = arr[i][j];
+        arr[i][j] = arr[j][i];
+        arr[j][i] = temp;
+    }
+}
+printf("The transpose of the matrix is \n");
+for (int i = 0; i &lt; 3; i++)
+{
+    for (int j = 0; j &lt; 3; j++)
+    {
+        printf("%d ", arr[i][j]);
+    }
+    printf("\n");
+}
+return 0;
+}
+
+
+/*
+Output:
+
+    Enter the elements in array 
+    1 2 3 
+    6 5 4 
+    7 1 3 
+    The transpose of the matrix is 
+    1 6 7 
+    2 5 1 
+    3 4 3 
+
+*/
+</code></pre><br><br><br>
+</li>
+
+Q.14. WAP to rotate a matrix 90 degree clockwise <br><br>
+<pre class="language-c"><code>
+#include &lt;stdio.h&gt;
+int main()
+{
+int n;
+printf("Enter the no. of rows and columns : ");
+scanf("%d", &n);
+int arr[n][n];
+printf("Enter the elements in array \n");
+// Taking Array Input
+for (int i = 0; i &lt; n; i++)
+{
+    for (int j = 0; j &lt; n; j++)
+    {
+        scanf("%d", &arr[i][j]);
+    }
+}
+// Finding the Transpose
+for (int i = 0; i &lt; n; i++)
+{
+    for (int j = 0; j &lt; i; j++) // to avoid repetition j ends at i (Met 2)
+    {
+        int temp1 = arr[i][j];
+        arr[i][j] = arr[j][i];
+        arr[j][i] = temp1;
+    }
+}
+// Printing the transpose
+printf("The transpose is  \n");
+for (int i = 0; i &lt; 3; i++)
+{
+    for (int j = 0; j &lt; 3; j++)
+    {
+        printf("%d ", arr[i][j]);
+    }
+    printf("\n");
+}
+// Rotate -> Reverse the array elements keeping row constant
+for (int i = 0; i &lt; n; i++)
+{
+    int j = 0;
+    int k = n - 1;
+    while (j != k)
+    {
+        // swap arr[i][j] and arr[i][k]
+        int temp2 = arr[i][j];
+        arr[i][j] = arr[i][k];
+        arr[i][k] = temp2;
+        j++;
+        k--;
+    }
+}
+// Printing the rotation
+printf("The rotated array is \n");
+for (int i = 0; i &lt; 3; i++)
+{
+    for (int j = 0; j &lt; 3; j++)
+    {
+        printf("%d ", arr[i][j]);
+    }
+    printf("\n");
+}
+return 0;
+}
+
+
+/*
+Output:
+
+    Enter the no. of rows and columns : 3
+    Enter the elements in array 
+    1 2  3
+    4 5  6
+    7 8  9
+    The transpose is  
+    1 4 7 
+    2 5 8 
+    3 6 9 
+    The rotated array is 
+    7 4 1 
+    8 5 2 
+    9 6 3 
+
+*/
+</code></pre><br><br><br>
+</li>
+
+Q.15. WAP to print the multiplication of two matrices given by the user  <br><br>
+Matrix multiplication is very different and complex from what you think <br><br>
+
+Note: <br><br>
+
+-> AxB != BxA <br><br>
+
+-> Row is dependent of 1st Matrix and column is dependent on 2nd matrix <br><br>
+
+    a[m][n] x b[p][q] <br><br>
+
+-> For multiplication, n should be equal to p (n==p) <br><br>
+
+-> Resultant is mxq <br><br>
+
+
+<pre class="language-c"><code>
+#include &lt;stdio.h&gt;
+int main()
+{
+// input the rows and columns
+int r1, c1;
+printf("Enter the rows and columns for first array\n");
+scanf("%d%d", &r1, &c1);
+int r2, c2;
+printf("Enter the rows and columns for second array\n");
+scanf("%d%d", &r2, &c2);
+// Check condition
+if (c1 != r2)
+{
+    printf("The matrix cannot be multiplied \n");
+    return 0;
+}
+int a[r1][c1], b[r2][c2];
+// input the elements in array
+printf("Enter the elements in first array \n");
+for (int i = 0; i &lt; r1; i++)
+{
+    for (int j = 0; j &lt; c1; j++)
+    {
+        scanf("%d", &a[i][j]);
+    }
+}
+printf("Enter the elements in second array \n");
+for (int i = 0; i &lt; r2; i++)
+{
+    for (int j = 0; j &lt; c2; j++)
+    {
+        scanf("%d", &b[i][j]);
+    }
+}
+// Multiplcation
+int res[r1][c2]; // going by the rule of multiplication
+int colrow = r2; // it can be r2 / c1
+for (int i = 0; i &lt; r1; i++)
+{
+    for (int j = 0; j &lt; c2; j++)
+    {
+        // i row of a[][] and j column of b[][]
+        //( a[i][0] , a[i][1]....) * ( b[0][j] , b[1][j]...)
+        res[i][j] = 0;
+        for (int k = 0; k &lt; colrow; k++)
+        {
+            res[i][j] += a[i][k] * b[k][j];
+        }
+    }
+}
+// Printing the array elements
+printf("The multiplied matrix is  \n");
+for (int i = 0; i &lt; r1; i++)
+{
+    for (int j = 0; j &lt; c2; j++)
+    {
+        printf("%d ", res[i][j]);
+    }
+    printf("\n");
+}
+return 0;
+}
+
+
+/*
+Output:
+
+    Enter the rows and columns for first array
+    3 3 
+    Enter the rows and columns for second array
+    3 3 
+    Enter the elements in first array 
+    1 2 3 
+    4 5 6 
+    7 8 9 
+    Enter the elements in second array 
+    3 2 1 
+    6 5 4 
+    9 8 7 
+    The multiplied matrix is  
+    42 36 30 
+    96 81 66 
+    150 126 102 
+
+
+*/
+</code></pre><br><br><br>
+</li>
+
+Q.16. WAP to print the matrix in form of wave (Type 1 - Opposite S)  <br><br>
+<pre class="language-c"><code>
+#include &lt;stdio.h&gt;
+int main()
+{
+int m;
+printf("Enter the no. of rows : ");
+scanf("%d", &m);
+int n;
+printf("Enter the no. of columns : ");
+scanf("%d", &n);
+int arr[n][n];
+printf("Enter the elements in array \n");
+for (int i = 0; i &lt; m; i++)
+{
+    for (int j = 0; j &lt; n; j++)
+    {
+        scanf("%d", &arr[i][j]);
+    }
+}
+// wave print
+printf("The wave printing elements are \n");
+for (int i = 0; i &lt; m; i++)
+{
+    if (i % 2 == 0)
+    {
+        for (int j = 0; j &lt; n; j++)
+        {
+            printf("%d ", arr[i][j]);
+        }
+    }
+    else
+    {
+        for (int j = n - 1; j >= 0; j--)
+        {
+            printf("%d ", arr[i][j]);
+        }
+    }
+}
+return 0;
+}
+
+/*
+Output:
+    
+    Enter the no. of rows : 3
+    Enter the no. of columns : 3
+    Enter the elements in array 
+    1 2 3 
+    4 5 6 
+    7 8 9 
+    The wave printing elements are 
+    1 2 3 6 5 4 7 8 9 
+
+*/
+</code></pre><br><br><br>
+</li>
+
+Q.17. WAP to print the matrix in form of wave (Type 1 - Vertical S)  <br><br>
+<pre class="language-c"><code>
+#include &lt;stdio.h&gt;
+int main()
+{
+int m;
+printf("Enter the no. of rows : ");
+scanf("%d", &m);
+int n;
+printf("Enter the no. of columns : ");
+scanf("%d", &n);
+int arr[m][n];
+printf("Enter the elements in array \n");
+for (int i = 0; i &lt; m; i++)
+{
+    for (int j = 0; j &lt; n; j++)
+    {
+        scanf("%d", &arr[i][j]);
+    }
+}
+// wave print 2
+printf("The wave printing elements are \n");
+for (int j = 0; j &lt; n; j++) // columns
+{
+    if (j % 2 == 0)
+    {
+        for (int i = m - 1; i >= 0; i--) // rows
+        {
+            printf("%d ", arr[i][j]);
+        }
+    }
+    else
+    {
+        for (int i = 0; i &lt; m; i++) // rows
+        {
+            printf("%d ", arr[i][j]); // column constant rows change
+        }
+    }
+}
+return 0;
+}
+
+
+/*
+Output:
+
+    Enter the no. of rows : 3
+    Enter the no. of columns : 3
+    Enter the elements in array 
+    1 2 3
+    4 5 6 
+    9 8 7 
+    The wave printing elements are 
+    9 4 1 2 5 8 7 6 3 
+
+*/
+</code></pre><br><br><br>
+</li>
+
+Q.18. Given an nxm matrix 'a'. print all elements of the matrix in spiral order  <br><br>
+Maintain 4 variables -> min row , max row , min col , max col <br><br>
+
+Step 1-> Print min row -> from min col to max col -> increment min row <br><br>
+
+Step 2 -> print max col -> from min row to max row -> decrement max col <br><br>
+
+Step 3 -> Print min row -> from max col to min col (reverse) -> decrement max row <br><br>
+
+Step 3 -> Print min col -> from max row to min row (reverse) -> increment min col <br><br>
+
+Base Condition -> If min row > max row then break (or) , min col > max col <br><br>
+
+More simpler base condition -> store total no of elements. when each no prints, increase the  <br><br>count. Base Condition count &lt; total no of elements <br><br>
+
+
+<pre class="language-c"><code>
+#include &lt;stdio.h&gt;
+int main()
+{
+int m;
+printf("Enter the no. of rows : ");
+scanf("%d", &m);
+int n;
+printf("Enter the no. of columns : ");
+scanf("%d", &n);
+int arr[m][n];
+printf("Enter the elements in array \n");
+for (int i = 0; i &lt; m; i++)
+{
+    for (int j = 0; j &lt; n; j++)
+    {
+        scanf("%d", &arr[i][j]);
+    }
+}
+// For rows
+int minrow = 0;
+int maxrow = m - 1;
+// For columns
+int mincol = 0;
+int maxcol = n - 1;
+// For base condition
+int total_elements = m * n;
+int count = 0;
+while (count &lt; total_elements)
+{
+    // print the minimum row
+    for (int j = mincol; j <= maxcol && count &lt; total_elements; j++)
+    { // Column number is j
+        printf("%d ", arr[minrow][j]);
+        count++;
+    }
+    minrow++;
+    // print the maximum column
+    for (int i = minrow; i <= maxrow && count &lt; total_elements; i++)
+    { // Row number is i
+        printf("%d ", arr[i][maxcol]);
+        count++;
+    }
+    maxcol--;
+    // print the maximum row (in reverse)
+    for (int j = maxcol; j >= mincol && count &lt; total_elements; j--)
+    { // Column number is j
+        printf("%d ", arr[maxrow][j]);
+        count++;
+    }
+    maxrow--;
+    // print the minimum column (in reverse)
+    for (int i = maxrow; i >= minrow && count &lt; total_elements; i--)
+    {
+        printf("%d ", arr[i][mincol]);
+        count++;
+    }
+    mincol++;
+}
+return 0;
+}
+
+/*
+Output:
+    
+    Enter the no. of rows : 3
+    Enter the no. of columns : 3
+    Enter the elements in array 
+    1 2 3 
+    4 7 8 
+    6 5 3
+    1 2 3 8 3 5 6 4 7 
+
+
+*/
+</code></pre><br><br><br>
+</li>
+
+Q.19. Given a positive integer n, generate a nxn matrix filled with elements from 1 to n^2 in spiral order  <br><br>
+<pre class="language-c"><code>
+#include &lt;stdio.h&gt;
+int main()
+{
+int n;
+printf("Enter the value of n: ");
+scanf("%d", &n);
+int matrix[n][n];
+int value = 1;
+int i, row_start = 0, row_end = n - 1, col_start = 0, col_end = n - 1;
+while (row_start <= row_end && col_start <= col_end)
+{
+    // Fill the top row
+    for (i = col_start; i <= col_end; ++i)
+        matrix[row_start][i] = value++;
+    // Fill the right column
+    for (i = row_start + 1; i <= row_end; ++i)
+        matrix[i][col_end] = value++;
+    // Fill the bottom row if it exists
+    if (row_start &lt; row_end)
+    {
+        for (i = col_end - 1; i >= col_start; --i)
+            matrix[row_end][i] = value++;
+    }
+    // Fill the left column if it exists
+    if (col_start &lt; col_end)
+    {
+        for (i = row_end - 1; i &gt; row_start; --i)
+            matrix[i][col_start] = value++;
+    }
+    // Update boundaries
+    ++row_start;
+    --row_end;
+    ++col_start;
+    --col_end;
+}
+// Print the generated matrix
+for (i = 0; i &lt; n; ++i)
+{
+    for (int j = 0; j &lt; n; ++j)
+        printf("%d\t", matrix[i][j]);
+    printf("\n");
+}
+return 0;
+}
+
+
+/*
+Output:
+
+    Enter the value of n: 4
+    1       2       3       4
+    12      13      14      5
+    11      16      15      6
+    10      9       8       7
+    
+
+*/
+</code></pre><br><br><br>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+<li><b>Programs on Strings </b><br><br>
+    Q.1.  Take a string input from the user, reverse the string and print it. <br><br>
+    <pre class="language-c"><code>
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+char name[100];
+puts("Enter a string");
+gets(name);
+int size = 0;
+int i = 0;
+while (name[i] != 0)
+{
+    size++;
+    i++;
+}
+printf("The size of string is %d", size);
+for (int i = 0, j = size - 1; i != j; i++, j--)
+{
+    char temp = name[i];
+    name[i] = name[j];
+    name[j] = temp;
+}
+printf("The reversed string is \n %s", name);
+
+return 0;
+}
+
+
+/*
+Output:
+    Enter a string
+    Yash Chavan
+    The size of string is 11The reversed string is 
+     navahC hsaY
+
+*/
+    </code></pre><br><br><br>
+</li>
+
+Q.2. Print a string using pointers. <br><br>
+<pre class="language-c"><code>
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+char name[100];
+puts("Enter a string");
+gets(name);
+
+char *ptr = &name[0]; // or *ptr = name;
+// address of string is the address of str[0]
+int i = 0;
+while (*ptr != '\0')
+{
+    printf("%c", *ptr);
+    ptr++;
+    i++;
+}
+char *ptr = "Yash"; //read only initialization of string
+
+return 0;
+}
+
+
+
+/*
+Output:
+    Enter a string
+    Yash
+    Yash
+
+*/
+</code></pre><br><br><br>
+</li>
+
+Q.3. Write a program explaining the value modification concepts in string using pointers <br><br>
+<pre class="language-c"><code>
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+char str[] = "Yash Chavan";
+char *ptr = str;
+printf("%s", ptr);
+
+// Changing the string using pointer
+ptr = "Chetan Chavan";
+printf("\n%s", ptr); // string will not change only pointer will move
+
+// Changing the character in string
+char *p = str;
+*p = 'B';
+printf("\n%s", str); // the first character will change
+
+return 0;
+}
+
+
+/*
+Output:
+    Yash Chavan
+    Chetan Chavan
+    Bash Chavan
+*/
+</code></pre><br><br><br>
+</li>
+
+Q.4. WAP to show the difference between shallow copy and deep copy in a string <br><br>
+<pre class="language-c"><code>
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+char s1[] = "Yash";
+char *s2 = s1;
+s1[0] = 'M';
+printf("%s", s2); // the string changes so it is a shallow copy
+
+char s3[] = "Yash";
+s3[0] = 'C';
+printf("%s", s1);//the string does not change so it is a deep copy
+printf("%s", s3);  
+
+return 0;
+}  
+
+</code></pre><br><br><br>
+</li>
+
+Q.5. WAP to use all the inbuilt string functions<br><br>
+<pre class="language-c"><code>
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+char str1[100] = "Yash";
+
+// Length Function
+int len = strlen(str1);
+printf("The length of the string is %d \n", len);
+
+// Copy Function
+char str2[100];
+strcpy(str2, str1);
+printf("The copied string is %s \n", str2);
+
+// Concatenate Function
+strcat(str1, str2);
+printf("The concatenated string is %s \n", str1);
+
+// Comparing Function
+char str3[100] = "Chavan";
+int com = strcmp(str3, str1); // same 0, 1st greater -ve , 2nd greater +ve
+printf("The comparison results in %d \n", com);
+
+//using functions by initializing string 
+by pointer is not possible as they are read only variables
+
+return 0;
+}
+
+
+
+/*
+Output:
+    The length of the string is 4 
+    The copied string is Yash 
+    The concatenated string is YashYash 
+    The comparison results in -1 
+
+*/
+</code></pre><br><br><br>
+</li>
+
+Q.6. Write a program to insert a new character in  a string at a given position <br><br>
+<pre class="language-c"><code>
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+char str[100] = "College";
+for (int i = 6; i >= 2; i--)
+{
+    str[i + 1] = str[i];
+}
+str[2] = 'm';
+printf("%s", str);
+return 0;
+}
+
+
+/*
+Output:
+    Comllege
+*/
+</code></pre><br><br><br>
+</li>
+
+Q.7. WAP to copy one string to another without using string.h library functions <br><br>
+<pre class="language-c"><code>
+#include <stdio.h>
+
+char *stringcopy(char str1[], char str2[])
+{
+int i = 0;
+while (str2[i] != '\0')
+{
+    str1[i] = str2[i];
+    i++;
+}
+str1[i] = '\0';
+return str1;
+}
+int main()
+{
+char str1[100] = "Yash";
+char str2[100] = "Chavan";
+printf("%s \n", str1);
+printf("%s \n", str2);
+
+stringcopy(str1, str2);
+printf("%s \n", str1);
+printf("%s \n", str2);
+}
+
+
+/*
+Output:
+    Yash 
+    Chavan 
+    Chavan 
+    Chavan  
+
+*/
+</code></pre><br><br><br>
+</li>
+
+Q.8.  WAP to concatenate two strings without using string.h library functions<br><br>
+<pre class="language-c"><code>
+#include <stdio.h>
+int main()
+{
+char str1[100];
+char str2[100];
+printf("Enter the first string \n");
+gets(str1);
+printf("Enter the second string \n");
+gets(str2);
+int i = 0;
+while (str1[i] != '\0')
+{
+    i++;
+}
+int j = 0;
+while (str2[j] != '\0')
+{
+    str1[i] = str2[j];
+    i++;
+    j++;
+}
+str1[i] = '\0';
+printf("The concatenated string is %s", str1);
+return 0;
+}
+
+
+/*
+Output:
+    Enter the first string 
+    Yash
+    Enter the second string 
+    Chavan
+    The concatenated string is YashChavan
+
+*/
+</code></pre><br><br><br>
+</li>
+
+Q.9. WAP to check whether a string is pallindrome or not.<br><br>
+<pre class="language-c"><code>
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+char str[100];
+printf("Enter the string \n");
+gets(str);
+char save[100];
+strcpy(save, str);
+strrev(str);
+int val = strcmp(save, str);
+if (val == 0)
+{
+    printf("Pallindrome");
+}
+else
+{
+    printf("Not Pallindrome");
+}
+
+return 0;
+}
+
+
+/*
+Output:
+    Enter the string 
+    noon
+    Palindrome
+*/
+</code></pre><br><br><br>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+<li><b>Programs on Structure </b><br><br>
+    Q.1. Write a program to declare, intialize and Accessing a structure <br><br>
+    <pre class="language-c"><code>
+#include <stdio.h>
+int main()
+{
+// Declaration of structure
+struct student
+{
+    char sign;
+    int rollno;
+    float fees;
+    int id;
+} yash1, kamal, sarth; // 3 students are also declared here itself
+// Initialization of structure
+// Direct Declaration
+struct student yash;
+yash.sign = 'A';
+yash.rollno = 30;
+yash.fees = 70000;
+// Input Declaration
+yash.id;
+printf("Enter the student id ");
+scanf("%d", &yash.id);
+// Printing of Structure
+printf("The sign of student is %c \n", yash.sign);
+printf("The roll no of student is %d \n", yash.rollno);
+printf("The fees paid is %.2f \n", yash.fees);
+printf("The student id is %d", yash.id);
+return 0;
+}
+
+/*
+Output:
+
+Enter the student id 45
+The sign of student is A 
+The roll no of student is 30 
+The fees paid is 70000.00 
+The student id is 45
+
+
+*/
+    </code></pre><br><br><br>
+</li>
+
+Q.2. Discuss and solve the problem for declaration of character array in structure <br><br>
+<pre class="language-c"><code>
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+char ch1[13] = "Yash"; // This will not show error
+char ch[13];
+// ch = "Yash";  //This will show error as it is not valid
+// To solve this we use the string copy function
+strcpy(ch, "yash chavan");
+printf("%s", ch);
+return 0;
+}
+
+/*
+Output:
+
+    yash chavan
+
+
+*/
+</code></pre><br><br><br>
+</li>
+
+Q.3. Explain the concept of Typedef by writing a program <br><br>
+<pre class="language-c"><code>
+// Syntax: typedef oldname newname;
+typedef int integer;
+typedef float decimal;
+#include <stdio.h>
+int main()
+{
+// using typedef in every sense
+integer a = 5;
+decimal b = 2.3;
+printf("%d  ", a);
+printf("%.2f  ", b);
+// using typedef in structure
+typedef struct book
+{
+    int pages;
+    char name[100];
+    float price;
+} done;
+// initialization using typedef
+done b1;
+done b2;        // short declaration
+struct book b3; // long declaration
+return 0;
+}
+
+</code></pre><br><br><br>
+</li>
+
+Q.4. How to solve multiple pointer declaration problem using typedef<br><br>
+<pre class="language-c"><code>
+typedef int *pointer;
+#include <stdio.h>
+int main()
+{
+// This type of declaration we all know
+int x = 3;
+int y = 4;
+int *a = &x;
+int *b = &y;
+printf("%p \n", a);
+printf("%p \n", b);
+printf("\n");
+// This type of declaration is not allowed for pointers
+int m = 3, n = 4;    // this is allowed
+// int *p = &m, q = &n; // this is not allowed
+int *p = &m, q = n;  // this is allowed because computer thinks q is an integer
+printf("%p \n", p);
+printf("%p \n", q); // invalid
+printf("%d \n", q); // valid
+// Using typedef this problem is solved
+pointer l = &m, z = &n;
+printf("%p \n", l);
+printf("%p \n", z);
+return 0;
+}
+
+/*
+Output:
+    
+    0061FF04 
+    0061FF00 
+    
+    0061FEFC 
+    00000004 
+    4 
+    0061FEFC 
+    0061FEF8  
+
+
+*/
+</code></pre><br><br><br>
+</li>
+
+Q.5. WAP showing the basic use of Structure array<br><br>
+<pre class="language-c"><code>
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+typedef struct student
+{
+    int roll;
+    int id;
+    char name[100];
+} student;
+student arr[3];
+// declaration of array elements
+arr[0].roll = 30;
+arr[0].id = 1;
+strcpy(arr[0].name, "Yash");
+arr[1].roll = 31;
+arr[1].id = 2;
+strcpy(arr[1].name, "Kamal");
+arr[2].roll = 32;
+arr[2].id = 3;
+strcpy(arr[2].name, "Sarth");
+// Printing of structure array
+for (int i = 0; i < 3; i++)
+{
+    printf("Roll No : %d \n", arr[i].roll);
+    printf("Id : %d \n", arr[i].id);
+    printf("Name : %s \n", arr[i].name);
+    printf("\n");
+}
+return 0;
+}
+
+/*
+Output:
+
+    Roll No : 30 
+    Id : 1 
+    Name : Yash 
+    
+    Roll No : 31 
+    Id : 2 
+    Name : Kamal 
+    
+    Roll No : 32 
+    Id : 3 
+    Name : Sarth 
+
+
+*/
+</code></pre><br><br><br>
+</li>
+
+A record contains name of cricketer, his age, number of test matches that he has played and the average runs that he has scored in each test match. Create an array of structure to hold records of 20 such cricketer and then write a program to read these records <br><br>
+<pre class="language-c"><code>
+#include <stdio.h>
+int main()
+{
+typedef struct cricketer
+{
+    char name[50];
+    int age;
+    int not ;
+    float avgruns;
+} match;
+match arr[20];
+// Input the values of the cricketer
+for (int i = 0; i < 20; i++)
+{
+    printf("Name : ");
+    scanf("%s", arr[i].name); // there will be no & when we input string
+    printf("Age : ");
+    scanf("%d", &arr[i].age);
+    printf("Number of test matches : ");
+    scanf("%d", &arr[i].not );
+    printf("Average Runs : ");
+    scanf("%f", &arr[i].avgruns);
+}
+printf("\n");
+// Printing of the values
+for (int i = 0; i < 20; i++)
+{
+    printf("Name of of %dth cricketer is %s \n", i, arr[i].name);
+    printf("Age of %dth cricketeris %d \n", i, arr[i].age);
+    printf("No of test matches of %dth cricketeris %d \n", i, arr[i].not );
+    printf("Average runs of %dth cricketerare %.2f \n", i, arr[i].avgruns);
+}
+return 0;
+}
+
+</code></pre><br><br><br>
+</li>
+
+Q.7. Explain the concept of Copying entire structure to another variable<br><br>
+<pre class="language-c"><code>
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+struct book
+{
+    int price;
+    int pages;
+    int size;
+    char name[50];
+};
+struct book b1, b2, b3;
+b1.price = 311;
+b1.pages = 320;
+b1.size = 3300;
+strcpy(b1.name, "book 1");
+// Game changer copying of elements of one variable to another
+b2 = b1;   //this is a deep copy -> changes in b will not affect a and vice versa
+printf("%d", b2.pages);
+return 0;
+}
+
+</code></pre><br><br><br>
+</li>
+
+Q.8. Create a structure date that contains three members namely date, month and year. Create 2 structure variables with different dates and now compare the two. If the dates are equal then display message as equal otherwise unequal. <br><br>
+<pre class="language-c"><code>
+#include <stdio.h>
+#include <stdbool.h>
+int main()
+{
+struct date
+{
+    int day;
+    int month;
+    int year;
+} a, b;
+// First date
+a.day = 8;
+a.month = 2;
+a.year = 2005;
+// Second date
+a.day = 7;
+a.month = 7;
+a.year = 2007;
+// declaring the counter
+bool flag = true;
+if (a.day != b.day)
+    flag = false;
+if (a.month != b.month)
+    flag = false;
+if (a.year != b.year)
+    flag = false;
+// Checking final condition
+if (flag == true)
+    printf("The dates are same");
+else
+    printf("The dates are different");
+return 0;
+}
+
+</code></pre><br><br><br>
+</li>
+
+Q.9. WAP showing the nesting of structures using an example <br><br>
+<pre class="language-c"><code>
+#include <stdio.h>
+int main()
+{
+struct chess
+{
+    int piece;
+    int elo;
+    int age;
+};
+struct legendchess
+{
+    struct chess brainy; // this represents the entire structure of chess
+    float salary;
+    char name[100];
+};
+struct godchess
+{
+    struct legendchess really;
+    int subscriber;
+    int likes;
+};
+// Initializing the legend chess datatypes
+struct legendchess magnus;
+magnus.brainy.elo = 3000; // brainy acts as a connector for the included structure
+magnus.salary = 30000.12;
+// Initializing the god chess data types
+struct godchess gotham;
+gotham.likes = 10000;
+gotham.really.brainy.elo = 2300; // this is the ultimate connector
+return 0;
+}
+
+</code></pre><br><br><br>
+</li>
+
+Q.10. WAP to explain the concept of pass by value using an example <br><br>
+<pre class="language-c"><code>
+#include <stdio.h>
+typedef struct book
+{
+int price;
+int pages;
+int no;
+} book;
+void print(book yash1){   //function of structure
+yash1.price = 2000;   //the price will not change in main as it is pass by value and copy is formed in the function
+printf("%d \n",yash1.price);
+printf("%d \n",yash1.pages);
+printf("%d \n",yash1.no);
+}
+int main()
+{
+book yash1;
+yash1.price = 1000;
+yash1.pages = 200;
+yash1.no = 1;
+print(yash1);   //pass by value
+return 0;
+}
+
+</code></pre><br><br><br>
+</li>
+
+Q.11. WAP explaining the concept of pointers in structure <br><br>
+<pre class="language-c"><code>
+#include <stdio.h>
+#include <string.h>
+struct pokemon
+{
+int height;
+int power;
+char name[100];
+} pikachu, charizard;
+void change(struct pokemon *p)
+{
+// (*p).height = 18;
+p->height = 18;   // this is used instead of * and () for pointers in structure
+//(*x).something = x->something
+(*p).power = 88;
+strcpy((*p).name, "Lizard");
+}
+int main()
+{
+// Eg. of pointer is int* x = &a;
+// Using pointers in structure
+struct pokemon *x = &pikachu;
+struct pokemon *y = &charizard;
+printf("%p \n", x);               // address of pointer = address of first member
+printf("%p \n", &pikachu.height); // address of first member
+printf("%p \n", &pikachu.power);
+printf("%p \n", pikachu.name); // no need to write & while printing string address / taking string output
+// Accessing the structure variables using pointers
+(*x).height = 19; // putting bracket here is necessary
+printf("The height is %d \n", pikachu.height);
+// This is same as that of function
+int a = 7;
+int *b = &a;
+*b = 10; // a = 10;
+// Using Call by reference in structures
+pikachu.height = 12;
+pikachu.power = 100;
+strcpy(pikachu.name, "charizard");
+printf("The values before changing \n");
+printf("%d \n", pikachu.height);
+printf("%s \n", pikachu.name);
+printf("%d \n", pikachu.power);
+change(&pikachu);
+printf("The values after changing \n");
+printf("%d \n", pikachu.height);
+printf("%s \n", pikachu.name);
+printf("%d \n", pikachu.power);
+//Initializing the structure members in single go
+struct pokemon pikachu = {20,"Yash",1000};   //here things should be orderwise
+                    //  height name power
+//We can declare half things in braces and half things seperate like before provided they are in the ending only
+return 0;
+}
+
+</code></pre><br><br><br>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+<li><b>Programs on Sorting </b><br><br>
+    Q.1. Given an array of integers with 1 to n elements and the size of the array is n+1. One element is occuring more than once i.e duplicate number is present. Find the dubicate element <br><br>
+    <pre class="language-c"><code>
+#include &lt;stdio.h&gt;
+int main()
+{
+int n;
+printf("Enter the size of the array \n");
+scanf("%d", &n);
+int arr[n];
+printf("Enter the elements in array \n");
+for (int i = 0; i &lt; n; i++)
+{
+    scanf("%d", &arr[i]);
+}
+for (int i = 0; i &lt; 5; i++)
+{
+    for (int j = i + 1; j &lt; 5; j++)
+    {
+        if (arr[i] == arr[j])
+        {
+            printf("The duplicate element is %d", arr[i]);
+            break;
+        }
+    }
+}
+return 0;
+}
+
+/*
+Output:
+
+    Enter the size of the array 
+    5
+    Enter the elements in array 
+    1 4 1 7 2
+    The duplicate element is 1
+
+
+*/
+    </code></pre><br><br><br>
+</li>
+
+Q.2. Bubble Sort in Ascending / Increasing Order<br><br>
+<pre class="language-c"><code>
+#include &lt;stdio.h&gt;
+#include &lt;stdbool.h&gt;
+int main()
+{
+int arr[5] = {5, 4, 3, 2, 1};
+int n = 5; // size of array
+for (int i = 0; i &lt; n; i++)
+{
+    printf("%d ", arr[i]);
+}
+// bubble sort
+for (int i = 0; i &lt; n - 1; i++)
+{
+    bool flag = true; // array is not sorted yet
+    for (int j = 0; j &lt; n - 1 - i; j++)
+    {
+        if (arr[j] &gt; arr[j + 1])
+        {
+            int temp = arr[j];
+            arr[j] = arr[j + 1];
+            arr[j + 1] = temp;
+            flag = false;
+        }
+    }
+    if (flag == true)   //optimizing bubble sort with the help of checkmark
+    {
+        break;
+    }
+}
+printf("\n");
+for (int i = 0; i &lt; n; i++)
+{
+    printf("%d ", arr[i]);
+}
+return 0;
+}
+
+/*
+Output:
+
+    5 4 3 2 1 
+    1 2 3 4 5 
+
+
+*/
+</code></pre><br><br><br>
+</li>
+Q.3. Bubble sort in Descending / Decreasing Order<br><br>
+<pre class="language-c"><code>
+#include &lt;stdio.h&gt;
+#include <stdbool.h>
+int main()
+{
+int arr[5] = {1, 2, 1, 2, 3};
+int n = 5; // size of array
+for (int i = 0; i &lt; n; i++)
+{
+    printf("%d ", arr[i]);
+}
+// bubble sort
+for (int i = 0; i &lt; n - 1; i++)
+{
+    bool flag = true; // array is not sorted yet
+    for (int j = 0; j &lt; n - 1 - i; j++)
+    {
+        if (arr[j] &lt; arr[j + 1])
+        {
+            int temp = arr[j];
+            arr[j] = arr[j + 1];
+            arr[j + 1] = temp;
+            flag = false;
+        }
+    }
+    if (flag == true) // optimizing bubble sort with the help of checkmark
+    {
+        break;
+    }
+}
+printf("\n");
+for (int i = 0; i &lt; n; i++)
+{
+    printf("%d ", arr[i]);
+}
+return 0;
+}
+
+/*
+Output:
+
+Output:
+
+    1 2 1 2 3 
+    3 2 2 1 1 
+
+
+*/
+</code></pre><br><br><br>
+</li>
+Q.4. Selection Sort<br><br>
+<pre class="language-c"><code>
+#include <stdio.h>
+int main()
+{
+int arr[5] = {2, 1, 5, 7, 4};
+int n = 5;
+printf("The unsorted array is \n");
+for (int i = 0; i &lt; n; i++)
+{
+    printf("%d ", arr[i]);
+}
+// selection sort
+for (int i = 0; i &lt; n - 1; i++) // n-1 passes
+{
+    int min = arr[i];
+    int mindx = i;
+    for (int j = i + 1; j &lt; n; j++)
+    {
+        if (min &gt; arr[j])
+        {
+            min = arr[j];
+            mindx = j;
+        }
+    }
+    // swap the min and first element of the unsorted part
+    // swap mindx and i
+    int temp = arr[mindx];
+    arr[mindx] = arr[i];
+    arr[i] = temp;
+}
+printf("\n");
+printf("The sorted array is \n");
+for (int i = 0; i &lt; n; i++)
+{
+    printf("%d ", arr[i]);
+}
+return 0;
+}
+
+
+/*
+Output:
+
+    The unsorted array is 
+    2 1 5 7 4 
+    The sorted array is 
+    1 2 4 5 7 
+
+
+
+*/
+</code></pre><br><br><br>
+</li>
+Q.5. Given an integer array arr, move all 0's to the end of it while maintaining the relative order of the non-zero elements <br><br>
+<pre class="language-c"><code>
+#include &lt;stdio.h&gt;
+int main()
+{
+int arr[5] = {0, 1, 0, 3, 12};
+int n = 5;
+printf("Original array: ");
+for (int i = 0; i &lt; n; i++)
+{
+    printf("%d ", arr[i]);
+}
+int temp[n];
+int index = 0;
+// Traverse the original array
+for (int i = 0; i &lt; n; i++)
+{
+    // If the current element is non-zero, store it in the temp array
+    if (arr[i] != 0)
+    {
+        temp[index] = arr[i];
+        index++;
+    }
+}
+// Fill the remaining elements of the temp array with zeros
+while (index &lt; n)
+{
+    temp[index] = 0;
+    index++;
+}
+// Copy the modified temp array back to the original array
+for (int i = 0; i &lt; n; i++)
+{
+    arr[i] = temp[i];
+}
+printf("\nModified array: ");
+for (int i = 0; i &lt; n; i++)
+{
+    printf("%d ", arr[i]);
+}
+return 0;
+}
+
+/*
+Output:
+    
+    Original array: 0 1 0 3 12 
+    Modified array: 1 3 12 0 0 
+
+
+*/
+</code></pre><br><br><br>
+</li>
+Q.6. Given an integer array arr, move all 0's to the end of it while maintaining the relative order of the non-zero elements without using extra array <br><br>
+<pre class="language-c"><code>
+#include &lt;stdio.h&gt;
+int main()
+{
+int arr[5] = {0, 1, 0, 3, 12};
+int n = 5;
+printf("Original array: ");
+for (int i = 0; i &lt; n; i++)
+{
+    printf("%d ", arr[i]);
+}
+int count = 0;
+// Traverse the array and move non-zero elements to the front
+for (int i = 0; i &lt; n; i++)
+{
+    if (arr[i] != 0)
+    {
+        arr[count] = arr[i];
+        count++;
+    }
+}
+// Fill the remaining elements with zeros
+while (count &lt; n)
+{
+    arr[count] = 0;
+    count++;
+}
+printf("\nModified array: ");
+for (int i = 0; i &lt; n; i++)
+{
+    printf("%d ", arr[i]);
+}
+return 0;
+}
+
+
+/*
+Output:
+
+    Original array: 0 1 0 3 12 
+    Modified array: 1 3 12 0 0 
+
+
+*/
+</code></pre><br><br><br>
+</li>
+Q.7. Given an integer array and an integer k where k <= size of array. We need to return the kth smallest element of the array<br><br>
+<pre class="language-c"><code>
+#include &lt;stdio.h&gt;
+int main()
+{
+int arr[6] = {7, 10, 4, 3, 20, 15};
+int size = 6;
+int k = 3;
+printf("Original Array: ");
+for (int i = 0; i &lt; size; i++)
+{
+    printf("%d ", arr[i]);
+}
+// Sort the array in ascending order using a simple sorting algorithm
+for (int i = 0; i &lt; size - 1; i++)
+{
+    for (int j = 0; j &lt; size - i - 1; j++)
+    {
+        if (arr[j] > arr[j + 1])
+        {
+            // Swap elements if they are in the wrong order
+            int temp = arr[j];
+            arr[j] = arr[j + 1];
+            arr[j + 1] = temp;
+        }
+    }
+}
+// Return the kth smallest element
+int kthSmallest = arr[k - 1];
+printf("\nThe %dth smallest element is: %d", k, kthSmallest);
+return 0;
+}
+
+/*
+Output:
+
+    Original Array: 7 10 4 3 20 15 
+    The 3th smallest element is: 7
+
+
+*/
+</code></pre><br><br><br>
+</li>
+Q.8. Given an array of digits (values are from 0 to 9). The task is to find the minimum possible sum of two numbers formed from digits of the array. Please note that all digits of the given array must be used to form two numbers. <br><br>
+
+Steps: <br><br>
+
+Sort the array in ascending order. <br><br>
+
+Initialize two variables, num1 and num2, to 0. These variables will store the formed numbers. <br><br>
+
+Iterate over the sorted array from the least significant digit position to the most significant digit position. <br><br>
+
+ For every even-indexed digit, add it to num1, and for every odd-indexed digit, add it to num2. <br><br>
+
+Finally, return the sum of num1 and num2, which will be the minimum possible sum of two numbers formed from the array digits. <br><br>
+<pre class="language-c"><code>
+#include &lt;stdio.h&gt;
+int main()
+{
+int arr[6] = {6, 8, 4, 5, 2, 3};
+int size = 6;
+// Sort the array in ascending order
+for (int i = 0; i &lt; size - 1; i++)
+{
+    for (int j = 0; j &lt; size - i - 1; j++)
+    {
+        if (arr[j] > arr[j + 1])
+        {
+            int temp = arr[j];
+            arr[j] = arr[j + 1];
+            arr[j + 1] = temp;
+        }
+    }
+}
+int num1 = 0;
+int num2 = 0;
+// Form the two numbers
+for (int i = 0; i &lt; size; i++)
+{
+    if (i % 2 == 0)
+    {
+        num1 = num1 * 10 + arr[i];
+    }
+    else
+    {
+        num2 = num2 * 10 + arr[i];
+    }
+}
+int minSum = num1 + num2;
+printf("Array: ");
+for (int i = 0; i &lt; size; i++)
+{
+    printf("%d ", arr[i]);
+}
+printf("\nMinimum Sum: %d\n", minSum);
+return 0;
+}
+
+
+/*
+Output:
+
+    Array: 2 3 4 5 6 8 
+    Minimum Sum: 604
+
+
+*/
+</code></pre><br><br><br>
+</li>
+
+
         </ul>
     </div>
 </body>
